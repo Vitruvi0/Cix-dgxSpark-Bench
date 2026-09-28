@@ -1,0 +1,89 @@
+=== generato: 2026-09-15T13:49:50+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           5         117
+immagine: flashnext-vllm-cix:blazux-ad8920d-tcnone -> flashnext-vllm-cix@sha256:6b2000e5f1f8d38d698eab41eefc8a31cee8532549a265dda63de44343b511ea
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+1c8b8da8ea5c789e23ca58639f18bbb2431ca340b1d62d77f45d974aa8870ecc  model.safetensors.index.json
+206 shard, 13098718852 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX ad8920d4a795a1fabe47edad2d7f336d9cd2eb68 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 0a41074695243f954dc7003c0bceb6ac915ec975 branch bench-sglang128-inspect-1509
+driver: 4146e3098149b75ac7831477f1917ec032d69170013fc5c5b0bec4cb67005003  ./ricetta-tcnone.sh
+driver: 40ca48f376138e2b6d60e22de74d2cad555d8c2a2bbe1bf03cd248753674fc3a  ./analisi_multiturn.py
+driver: aef0e1316ee34f54b10136db03e24ca7ba0c1e90c27709108d37070080595705  ./analizza_tcnone.py
+driver: 3ebfc44cfee7ee9c8bfa520a8611567e9ecc207ba72323b0886c0ce06d2256a4  ./driver_inspect.py
+driver: 7812a31ba11fcdd71876a72d7a0752577b428ecd710fad4b88021f2f03a38e1d  ./estrai_inspect.py
+driver: 988996cb354a27f3218735f5419050523a0601628905020605d9485ed904ae44  ./identita_campioni.py
+driver: 36761b2644fbce820ace04bb7b7ae52a4037764b404b6219cb1a991889833061  ./prerequisiti.py
+driver: 25c6267af8e22f80aabdb8e61e86b0837d8d09f5aa2cca0bba6a3423eef73647  ./test_analizza_tcnone.py
+driver: df28715f3a3b08b712ef3743e8df0601312a2be25d02999a7192c0ae8b2cf0df  ./test_driver_tcnone.py
+driver: 2e68a84e5a0fa674e91460eb5fcff03b7e307a8f58c9828c996de05d513405a6  ./test_estrai_inspect.py
+driver: 5f2fd41ee49c5b15c8cdf2ff69992c0be05be5a981c4be24c61a881318b10d87  ./test_identita_campioni.py
+driver: 43cd174c1b648b758115c3332095633566c07541c8d06aa937022e53069255f0  ./test_verifica_richieste.py
+driver: 92fcc5fe1f0a058dba21271165cd7dffb0b2f20cd6fefd82015fe7276a7fdf82  ./verifica_richieste.py
+driver: 9ecee182f3487eb461129007dac2f140c9582209daa70136b3b35699a8a3e7b4  ./verifica_wire.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 669741f7d3c2b09d5608dba1ff1f1250db19a9c74662b95dd3a9f55df2ffd7bb  validita.py
+
+cella inspect tcnone; immagine sha256:6b2000e5f1f8d38d698eab41eefc8a31cee8532549a265dda63de44343b511ea; modello /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid; branch bench-sglang128-inspect-1509 commit 0a41074695243f954dc7003c0bceb6ac915ec975
+{
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/README.md": "d101398ae9bc2a5bf0d4d48a8068d6de53f388872b9db498f75e24ae02ebde10",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/driver_inspect.py": "3ebfc44cfee7ee9c8bfa520a8611567e9ecc207ba72323b0886c0ce06d2256a4",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/identita-checkpoint.json": "ca649a898ff6501e94efbe8725c8ee91ad76ddb7e6ab77ba26a94381c973c27d",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/prerequisiti.py": "36761b2644fbce820ace04bb7b7ae52a4037764b404b6219cb1a991889833061",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/identita_campioni.py": "988996cb354a27f3218735f5419050523a0601628905020605d9485ed904ae44",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/estrai_inspect.py": "7812a31ba11fcdd71876a72d7a0752577b428ecd710fad4b88021f2f03a38e1d",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/verifica_richieste.py": "92fcc5fe1f0a058dba21271165cd7dffb0b2f20cd6fefd82015fe7276a7fdf82",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/analizza_tcnone.py": "aef0e1316ee34f54b10136db03e24ca7ba0c1e90c27709108d37070080595705",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/analisi_multiturn.py": "40ca48f376138e2b6d60e22de74d2cad555d8c2a2bbe1bf03cd248753674fc3a",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/verifica_wire.py": "9ecee182f3487eb461129007dac2f140c9582209daa70136b3b35699a8a3e7b4",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/verifica-wire.txt": "5a30780f8290cf9b9b6938e863744016a74050e77c6f117c63eeb591d99b4eee",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/generate-singleturn.json": "0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/generate-multiturn.json": "56225e8a3e32f51379608887bc41a1840bb61b4c1ff98a5fac4ccc2781c0999f",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/ricetta-tcnone.sh": "4146e3098149b75ac7831477f1917ec032d69170013fc5c5b0bec4cb67005003",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/immagine-id.txt": "d5746cd0a5598d8a65fbd1915452a7795397f23d2cb6c2ab608edd6e66730404",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/test_driver_tcnone.py": "df28715f3a3b08b712ef3743e8df0601312a2be25d02999a7192c0ae8b2cf0df",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/test_analizza_tcnone.py": "25c6267af8e22f80aabdb8e61e86b0837d8d09f5aa2cca0bba6a3423eef73647",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/test_identita_campioni.py": "5f2fd41ee49c5b15c8cdf2ff69992c0be05be5a981c4be24c61a881318b10d87",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/test_verifica_richieste.py": "43cd174c1b648b758115c3332095633566c07541c8d06aa937022e53069255f0",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/test_estrai_inspect.py": "2e68a84e5a0fa674e91460eb5fcff03b7e307a8f58c9828c996de05d513405a6",
+ "/home/cix/cix/Agents/cix-benchmarks/run.sh": "ca9df5957d649310960eaaad76fcd2d785647ee038bc1071919736d6d21efc13",
+ "/home/cix/cix/benchmark/harness/versioni.sh": "bd0b88de142a91d50a3a0d27b6c0ab3e48e1fa5f4b2c23c070de6d866b1ede71",
+ "/home/cix/cix/benchmark/harness/monitor_mem.py": "541877b793594497abcfff53f74baa533d2da2b2a8d55748be849d930c555ff8",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-r2/driver_b6.py": "6c215865bf1dcc54929f44e39a7ea7d4f1d6522d32395fb51de8b70acab39d5c",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-r2/misura_b6.py": "4a52dba2d1747a79ac08e09b82c0228c10404f7b3f1d80e13697a510910c6f49",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-r2/monitor_b6.py": "b05a22bd7162fd1f848eb8387aa4af833f4902e79721beea297fc4da377d08d4",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-r2/identita.json": "3a6e4158232ef55aa769c3756edd73a15495e92ff4c1e8551bc3f2a3b47262f3",
+ "/home/cix/cix/benchmark/harness/concorrenza.py": "1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d",
+ "/home/cix/cix/benchmark/harness/latenza.py": "9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f",
+ "/home/cix/cix/benchmark/risultati/2026-09-04-flashnext-sglang/watchdog-memoria-w3.py": "cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-vllm-toolchoice-conferma/lancio-tcnone.sh": "a011492a0aad1bfaf14b9ff2fc0fad1b1bc441d55a70bd688042ae3ee96f4429",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-vllm-toolchoice-conferma/immagine-id.txt": "d5746cd0a5598d8a65fbd1915452a7795397f23d2cb6c2ab608edd6e66730404",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/generate.json": "0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/generate.json": "56225e8a3e32f51379608887bc41a1840bb61b4c1ff98a5fac4ccc2781c0999f",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/prerequisiti-run.txt": "de1984b10db6918c76d21c6c71ebdf88362dd43d29aa06fa11dbed6300659ddc",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/prerequisiti-run.txt": "f4afe187ba12306d41d57044683a164cd9f67e853c7de124f7c38579bc908c0b",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/flashnext/bfcl/2026-09-09T22-35-29-00-00_bfcl_C2J3sNQ3ZGLVBUGLcfWoNa.eval": "98fb80b992eab6d3fab1e9049032481e7cf32a24452997d35312b468244b7c9b",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/flashnext/ifeval/2026-09-09T22-46-45-00-00_ifeval_hdKjTnxMQNYX9gBeEds2Pf.eval": "23dfbaa4160d5da2b0e7134dfefc71dc5127046f787c3f4d3a0d9df61df06b2e",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/27b-k1/bfcl/2026-09-09T23-28-59-00-00_bfcl_kaS5uaF5pgCAEjLKA2thoo.eval": "0314be28c444361bc37fcbf9394550714c5896ab88a9006beeab45780ab6a399",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/27b-k1/ifeval/2026-09-09T23-39-27-00-00_ifeval_9qopxnQ73HF943LJrv5SMC.eval": "e494f3592a03c9232a0d353b8462fea4376d1b78b8976d26ebb9aca94900493e",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/logs/flashnext/bfcl/2026-09-10T08-48-48-00-00_bfcl_eXeSzpmKXj9uJKvkPK8CU9.eval": "6c51880547b754aef59929d4eb846c18c12fed76b526027ad04ec5146064bc36",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid/config.json": "e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid/model.safetensors.index.json": "1c8b8da8ea5c789e23ca58639f18bbb2431ca340b1d62d77f45d974aa8870ecc",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid/tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid/tokenizer_config.json": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4-fp8hybrid/generation_config.json": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+}

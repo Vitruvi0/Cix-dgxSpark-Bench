@@ -1,0 +1,189 @@
+=== generato: 2026-09-03T11:00:59+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           6         115           0           1         115
+immagine: vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8 -> vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: eb653c26d9507c819c2b3118e192b7bb10595a6d branch bench-flashnext-vllm
+driver: 1bfd193e3413e379302ec95951f0028f52b00c58d81991bcf082e7ccdbac6805  ./build-vllm.sh
+driver: f7c2c92e0539a5b6112d4a8df96a03d46a73544a3a427d8c3bf89d4d457b6c3a  ./driver-vllm.sh
+driver: af9d7da4192b115f5f5ee6a4e9eced77b8dfa5ecb9138a513bd56718fd93c02d  ./lancio-f3.1-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.2-blazux.sh
+driver: 303ae2d151da4d3f8e1f874dd80054fb157092eb06035f47b26604e7f19fa4eb  ./lancio-f3.3-mtp0.sh
+driver: 2f2d8510f927d58a10b257f069c4c301fbb409071b7531fd79f84f0cb1673e2b  ./lancio-f3.3-mtp3.sh
+driver: 06786fd0f317356dd83ee298065b4b50669a43dbb3f023da91ed9ec56f58215b  ./lancio-f3.3-ngram5.sh
+driver: 497aba8dbbb725b87fe035a03f949c1744cae25ef3a2a27e5d97a22f6cf0a4dc  ./lancio-f3.3-topk-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.4-mmap-cold.sh
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: b31f39d94a031a092ba93c19752f92eba118d86616a4d86d07baf128d2a9c7e7  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+eseguito il 2026-09-03 (run dir datata 05 dal piano)
+=== generato: 2026-09-03T11:13:20+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         116           0           2         117
+immagine: vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8 -> vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 6b5b562f3b50a100de6bd4ba2535022d5c1b63e7 branch bench-flashnext-vllm
+driver: 1bfd193e3413e379302ec95951f0028f52b00c58d81991bcf082e7ccdbac6805  ./build-vllm.sh
+driver: f7c2c92e0539a5b6112d4a8df96a03d46a73544a3a427d8c3bf89d4d457b6c3a  ./driver-vllm.sh
+driver: af9d7da4192b115f5f5ee6a4e9eced77b8dfa5ecb9138a513bd56718fd93c02d  ./lancio-f3.1-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.2-blazux.sh
+driver: 303ae2d151da4d3f8e1f874dd80054fb157092eb06035f47b26604e7f19fa4eb  ./lancio-f3.3-mtp0.sh
+driver: 2f2d8510f927d58a10b257f069c4c301fbb409071b7531fd79f84f0cb1673e2b  ./lancio-f3.3-mtp3.sh
+driver: 06786fd0f317356dd83ee298065b4b50669a43dbb3f023da91ed9ec56f58215b  ./lancio-f3.3-ngram5.sh
+driver: 497aba8dbbb725b87fe035a03f949c1744cae25ef3a2a27e5d97a22f6cf0a4dc  ./lancio-f3.3-topk-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.4-mmap-cold.sh
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: b31f39d94a031a092ba93c19752f92eba118d86616a4d86d07baf128d2a9c7e7  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+=== generato: 2026-09-03T11:42:34+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         107           0          12         118
+immagine: vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8 -> vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 8d019d53017542c8c5947405d789b429e49d5054 branch bench-flashnext-vllm
+driver: 1bfd193e3413e379302ec95951f0028f52b00c58d81991bcf082e7ccdbac6805  ./build-vllm.sh
+driver: db4dc5398921c3a7f9d10f49e6a6e2ac524d960dc0103e240b5ab5dcad01c95f  ./driver-servizio-vllm.sh
+driver: f7c2c92e0539a5b6112d4a8df96a03d46a73544a3a427d8c3bf89d4d457b6c3a  ./driver-vllm.sh
+driver: af9d7da4192b115f5f5ee6a4e9eced77b8dfa5ecb9138a513bd56718fd93c02d  ./lancio-f3.1-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.2-blazux.sh
+driver: 303ae2d151da4d3f8e1f874dd80054fb157092eb06035f47b26604e7f19fa4eb  ./lancio-f3.3-mtp0.sh
+driver: 2f2d8510f927d58a10b257f069c4c301fbb409071b7531fd79f84f0cb1673e2b  ./lancio-f3.3-mtp3.sh
+driver: 06786fd0f317356dd83ee298065b4b50669a43dbb3f023da91ed9ec56f58215b  ./lancio-f3.3-ngram5.sh
+driver: 497aba8dbbb725b87fe035a03f949c1744cae25ef3a2a27e5d97a22f6cf0a4dc  ./lancio-f3.3-topk-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.4-mmap-cold.sh
+driver: f6845dd943fbeaac7fbc834627c0541349ef0da03b69b28ee7bc31f2e0ab0f1c  ./lancio-servizio-vllm.sh
+driver: 3653ae9eaf6079d7298e82eee35b1e8125a8b22353037dbcdf563ed3dc5fa85d  ./riprendi-f3.2-medium.sh
+driver: 37585c610e15dc618fd9ae8e7258934ed976effcba67312e2fa1a0e2d2d5cd2b  ./watchdog-memoria.sh
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+nota 12:37: drop_caches eseguito dall'utente durante il load dei pesi di f3.3-mtp3 (atteso per ngram5): pesi comunque letti da disco, nessun effetto sulla griglia
+=== generato: 2026-09-03T14:22:10+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         116           0           2         117
+immagine: vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8 -> vllm/vllm-openai@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 8dc45713e741c0a884833317c71f73b46fc30a18 branch bench-flashnext-vllm
+driver: 1bfd193e3413e379302ec95951f0028f52b00c58d81991bcf082e7ccdbac6805  ./build-vllm.sh
+driver: db4dc5398921c3a7f9d10f49e6a6e2ac524d960dc0103e240b5ab5dcad01c95f  ./driver-servizio-vllm.sh
+driver: f537f1e31b66ed1563a1b40ce03ca1601254f1673bf745c23a6f95fc05564007  ./driver-vllm.sh
+driver: af9d7da4192b115f5f5ee6a4e9eced77b8dfa5ecb9138a513bd56718fd93c02d  ./lancio-f3.1-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.2-blazux.sh
+driver: 303ae2d151da4d3f8e1f874dd80054fb157092eb06035f47b26604e7f19fa4eb  ./lancio-f3.3-mtp0.sh
+driver: 2f2d8510f927d58a10b257f069c4c301fbb409071b7531fd79f84f0cb1673e2b  ./lancio-f3.3-mtp3.sh
+driver: 06786fd0f317356dd83ee298065b4b50669a43dbb3f023da91ed9ec56f58215b  ./lancio-f3.3-ngram5.sh
+driver: dea8d481e1a74476c08f06e1a3208f6a97b546a0a978d11874e8b9697e642d3e  ./lancio-f3.3-topk-stock.sh
+driver: b321deafbd8fb070a0b9e2590c1e33fc03bcd0e6dcf54dc60dcc5bf41ac2a511  ./lancio-f3.4-mmap-cold.sh
+driver: f6845dd943fbeaac7fbc834627c0541349ef0da03b69b28ee7bc31f2e0ab0f1c  ./lancio-servizio-vllm.sh
+driver: 3653ae9eaf6079d7298e82eee35b1e8125a8b22353037dbcdf563ed3dc5fa85d  ./riprendi-f3.2-medium.sh
+driver: 37585c610e15dc618fd9ae8e7258934ed976effcba67312e2fa1a0e2d2d5cd2b  ./watchdog-memoria.sh
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+=== generato: 2026-09-03T15:04:53+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         105           0          12         117
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 8dc45713e741c0a884833317c71f73b46fc30a18 branch bench-flashnext-vllm
+driver: 1bfd193e3413e379302ec95951f0028f52b00c58d81991bcf082e7ccdbac6805  ./build-vllm.sh
+driver: db4dc5398921c3a7f9d10f49e6a6e2ac524d960dc0103e240b5ab5dcad01c95f  ./driver-servizio-vllm.sh
+driver: f537f1e31b66ed1563a1b40ce03ca1601254f1673bf745c23a6f95fc05564007  ./driver-vllm.sh
+driver: af9d7da4192b115f5f5ee6a4e9eced77b8dfa5ecb9138a513bd56718fd93c02d  ./lancio-f3.1-stock.sh
+driver: 1f6311b6a76501190299044a24a7bf16ca5976a92380cbf267e50f55121be7c5  ./lancio-f3.2-blazux.sh
+driver: 303ae2d151da4d3f8e1f874dd80054fb157092eb06035f47b26604e7f19fa4eb  ./lancio-f3.3-mtp0.sh
+driver: 2f2d8510f927d58a10b257f069c4c301fbb409071b7531fd79f84f0cb1673e2b  ./lancio-f3.3-mtp3.sh
+driver: 06786fd0f317356dd83ee298065b4b50669a43dbb3f023da91ed9ec56f58215b  ./lancio-f3.3-ngram5.sh
+driver: dea8d481e1a74476c08f06e1a3208f6a97b546a0a978d11874e8b9697e642d3e  ./lancio-f3.3-topk-stock.sh
+driver: b321deafbd8fb070a0b9e2590c1e33fc03bcd0e6dcf54dc60dcc5bf41ac2a511  ./lancio-f3.4-mmap-cold.sh
+driver: f6845dd943fbeaac7fbc834627c0541349ef0da03b69b28ee7bc31f2e0ab0f1c  ./lancio-servizio-vllm.sh
+driver: 3653ae9eaf6079d7298e82eee35b1e8125a8b22353037dbcdf563ed3dc5fa85d  ./riprendi-f3.2-medium.sh
+driver: 37585c610e15dc618fd9ae8e7258934ed976effcba67312e2fa1a0e2d2d5cd2b  ./watchdog-memoria.sh
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+eseguito il 2026-09-03 (run dir datata 05 dal piano); catena: fasi-f3.txt (f3.1, riavvio host) -> fasi-f3-resto.txt (f3.2, stop harness) -> riprendi-f3.2-medium.sh + fasi-f3-resto2.txt (mtp0, mtp3, ngram5 fallita) -> fasi-f3-resto3.txt (topk-stock, mmap-cold)

@@ -1,0 +1,262 @@
+{
+  "prove": {
+    "replay-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 134,
+      "content": {
+        "0": {
+          "caratteri": 147,
+          "sha256": "b98b1c2ef67354cf"
+        }
+      }
+    },
+    "replay-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 134,
+      "content": {
+        "0": {
+          "caratteri": 147,
+          "sha256": "b98b1c2ef67354cf"
+        }
+      }
+    },
+    "replay-3": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 134,
+      "content": {
+        "0": {
+          "caratteri": 147,
+          "sha256": "b98b1c2ef67354cf"
+        }
+      }
+    },
+    "replay-max40": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 40,
+      "content": {
+        "0": {
+          "caratteri": 145,
+          "sha256": "75f2a78fbf7aa649"
+        }
+      }
+    },
+    "replay-max60": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 60,
+      "content": {
+        "0": {
+          "caratteri": 146,
+          "sha256": "2e8c758dc5572135"
+        }
+      }
+    },
+    "replay-tools-none": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 76,
+      "content": {
+        "0": {
+          "caratteri": 118,
+          "sha256": "d865dab320a9a557"
+        }
+      }
+    },
+    "replay-n2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop",
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 345,
+      "content": {
+        "0": {
+          "caratteri": 940,
+          "sha256": "dd710117eb3865a5"
+        },
+        "1": {
+          "caratteri": 111,
+          "sha256": "a7e59fe77a1e403a"
+        }
+      }
+    },
+    "controllo-auto-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "done": 1,
+      "completion_tokens": 25,
+      "content": {
+        "0": {
+          "caratteri": 0,
+          "sha256": "e3b0c44298fc1c14"
+        }
+      }
+    },
+    "controllo-auto-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "done": 1,
+      "completion_tokens": 25,
+      "content": {
+        "0": {
+          "caratteri": 0,
+          "sha256": "e3b0c44298fc1c14"
+        }
+      }
+    },
+    "replay-choice-null": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 16,
+      "nomi": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "done": 1,
+      "completion_tokens": 134,
+      "content": {
+        "0": {
+          "caratteri": 147,
+          "sha256": "b98b1c2ef67354cf"
+        }
+      }
+    }
+  },
+  "verdetto": "NON CONCLUSIVO (TRIGGER NON RIPRODOTTO)",
+  "motivi": [
+    "replay-1: completion_tokens 134, finish ['stop']",
+    "replay-2: completion_tokens 134, finish ['stop']",
+    "replay-3: completion_tokens 134, finish ['stop']"
+  ],
+  "descrittive": {
+    "replay-n2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop",
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "done": 1,
+      "completion_tokens": 345,
+      "content": {
+        "0": {
+          "caratteri": 940,
+          "sha256": "dd710117eb3865a5"
+        },
+        "1": {
+          "caratteri": 111,
+          "sha256": "a7e59fe77a1e403a"
+        }
+      }
+    },
+    "replay-choice-null": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 16,
+      "nomi": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "done": 1,
+      "completion_tokens": 134,
+      "content": {
+        "0": {
+          "caratteri": 147,
+          "sha256": "b98b1c2ef67354cf"
+        }
+      }
+    }
+  }
+}

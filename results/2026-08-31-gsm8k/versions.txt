@@ -1,0 +1,8 @@
+data: 2026-08-31T19:08:33+02:00
+modello: /srv/cix/modelli/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix-0731.gguf
+sha256 (primi 1GiB): e72e87dd6e10dfec59833efa6704a82a7377aa9a0a1adcf775e24560807c0a9a
+ds4: n/d
+lm-eval: 0.4.13.dev0
+driver: 580.173.02
+os: 6.17.0-1031-nvidia
+tasks: gsm8k  limit: 50

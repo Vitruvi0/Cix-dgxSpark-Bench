@@ -1,0 +1,120 @@
+{
+  "results": {
+    "arc_it": {
+      "name": "arc_it",
+      "alias": "arc_it",
+      "sample_len": 50,
+      "acc,none": 0.46,
+      "acc_stderr,none": 0.07119963311072636,
+      "acc_norm,none": 0.58,
+      "acc_norm_stderr,none": 0.07050835816716038
+    }
+  },
+  "group_subtasks": {},
+  "configs": {
+    "arc_it": {
+      "task": "arc_it",
+      "dataset_path": "alexandrainst/m_arc",
+      "dataset_name": "it",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        # breakpoint()\n        out_doc = {\n            \"id\": doc[\"id\"],\n            \"query\": \"Question: \" + preprocess(doc[\"instruction\"]) + \"\\nAnswer:\",\n            \"choices\": [\n                preprocess(option)\n                for option in [\n                    doc[\"option_a\"],\n                    doc[\"option_b\"],\n                    doc[\"option_c\"],\n                    doc[\"option_d\"],\n                    doc[\"option_e\"],\n                ]\n                if option\n            ],\n            \"gold\": [\"A\", \"B\", \"C\", \"D\", \"E\"].index(doc[\"answer\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0xff2d884236a0>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "query",
+        "doc_to_choice": "choices",
+        "doc_to_target": "gold",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "query",
+      "metadata": {
+        "version": 2.0,
+        "base_url": "http://127.0.0.1:8000",
+        "config_source": "/home/cix/Desktop/benchmark/lm-evaluation-harness/lm_eval/tasks/okapi/arc_multilingual/arc_it.yaml"
+      }
+    }
+  },
+  "versions": {
+    "arc_it": 2.0
+  },
+  "n-shot": {
+    "arc_it": 0
+  },
+  "higher_is_better": {
+    "arc_it": {
+      "acc": true,
+      "acc_norm": true
+    }
+  },
+  "n-samples": {
+    "arc_it": {
+      "original": 1169,
+      "effective": 50
+    }
+  },
+  "config": {
+    "model": "gguf",
+    "model_args": {
+      "base_url": "http://127.0.0.1:8000"
+    },
+    "batch_size": 1,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "use_cache": null,
+    "limit": 50.0,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": {},
+    "random_seed": 1234,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1788198150.4803972,
+  "pretty_env_info": "N/A (torch not installed)",
+  "transformers_version": "5.16.1",
+  "lm_eval_version": "0.4.13.dev0",
+  "upper_git_hash": null,
+  "task_hashes": {
+    "arc_it": "918902166adb46438607f79dfe7242f01255384f4f59e74085bbed0d06e860b5"
+  },
+  "model_source": "gguf",
+  "model_name": "vdujuxrm",
+  "model_name_sanitized": "vdujuxrm",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": null,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "total_evaluation_time_seconds": "585.6625696980009"
+}

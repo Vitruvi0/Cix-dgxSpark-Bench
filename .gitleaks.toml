@@ -1,0 +1,9 @@
+# versions.txt records the sha256 of the model's tokenizer files, which the
+# generic-api-key rule takes for keys. They are hashes of public files.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "sha256 of tokenizer files in versions.txt"
+regexTarget = "line"
+regexes = ['''tokenizer(_config)?\.json": "[0-9a-f]{64}"''']

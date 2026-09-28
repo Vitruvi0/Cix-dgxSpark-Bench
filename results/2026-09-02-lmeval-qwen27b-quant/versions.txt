@@ -1,0 +1,9 @@
+2026-09-02T10:52:42+02:00
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+nvcr.io/nvidia/vllm@sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56
+vllm 0.27.1+93523f72.dev | torch 2.14.0a0+4fdf77b940.nv26.08 (dal banner del container, vedi server-*.log)
+modelli: /srv/cix/modelli/Qwen3.8-27B (BF16 52 GiB), Qwen3.8-27B-FP8 (ufficiale 29 GiB), Qwen3.8-27B-NVFP4 (unsloth 22 GiB); flag base --gpu-memory-utilization 0.85
+lm-eval: 0.4.13.dev0 clone ~/Desktop/benchmark/lm-evaluation-harness @ 3d019dc2 (gguf.py patchato localmente, non usato qui)
+task: arc_it 0-shot (okapi/arc_multilingual v2, acc/acc_norm), gsm8k 5-shot (v3, exact_match strict/flexible); seed 1234, temperature 0, num_concurrent 16 (batching lato vllm)

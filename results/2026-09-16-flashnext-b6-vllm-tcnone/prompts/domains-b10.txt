@@ -1,0 +1,24 @@
+Sono il titolare di un'officina meccanica con 12 dipendenti: spiegami in dieci righe come organizzare la manutenzione programmata dei ponti sollevatori e quali registri devo tenere.
+Gestisco un piccolo studio commercialista: riassumi gli adempimenti IVA trimestrali per un cliente in regime ordinario e indica le scadenze tipiche.
+Lavoro in una cooperativa agricola che produce olio: proponi un piano di tracciabilita' dei lotti dal frantoio alla bottiglia, con i dati minimi da registrare.
+Sono responsabile HR di una PMI metalmeccanica: scrivi una bozza di procedura per l'onboarding di un nuovo operaio, incluse formazione sicurezza e consegna DPI.
+Ho un e-commerce di abbigliamento: quali metriche devo seguire ogni settimana per capire se le campagne pubblicitarie rendono, e come le calcolo?
+Dirigo una casa di riposo privata: elenca i controlli igienico-sanitari periodici obbligatori sulla cucina interna e la frequenza consigliata.
+Sono un installatore di impianti fotovoltaici: spiega a un cliente domestico la differenza fra autoconsumo, scambio sul posto e accumulo, in linguaggio semplice.
+Gestisco un hotel a tre stelle di 40 camere: proponi una checklist per la pulizia giornaliera delle camere e i controlli del capo servizio.
+Sono il responsabile qualita' di un'azienda alimentare: descrivi come impostare il piano HACCP per una nuova linea di confetture, con i punti critici tipici.
+Ho una ditta di trasporti con 8 camion: quali documenti devono viaggiare a bordo e come organizzo il controllo delle ore di guida degli autisti?
+Lavoro in uno studio legale di provincia: riassumi in modo pratico cosa cambia per una PMI con il nuovo regolamento europeo sui dati, in dieci punti.
+Sono socio di una startup software con 6 persone: proponi una struttura di riunioni settimanali che non superi due ore totali e tenga traccia delle decisioni.
+Gestisco una farmacia: come organizzo il controllo delle scadenze dei farmaci e la gestione dei resi al distributore?
+Ho una tipografia: spiegami come preventivare un lavoro di stampa offset (costi fissi, avviamento, carta, finitura) con un esempio numerico.
+Sono direttore di una scuola di lingue privata: quali indicatori uso per valutare la qualita' della didattica e la soddisfazione degli studenti?
+Lavoro in una piccola banca di credito cooperativo: descrivi le verifiche antiriciclaggio da fare all'apertura di un conto per una societa' di persone.
+Ho un ristorante con 30 coperti: proponi un metodo per calcolare il food cost di un menu e tenere sotto controllo gli sprechi.
+Sono responsabile IT di una PMI con 50 PC: scrivi un piano di backup e ripristino, con frequenza, conservazione e test periodici.
+Gestisco un'agenzia immobiliare: elenca i documenti necessari per mettere in vendita un appartamento e i controlli preliminari da fare.
+Sono il titolare di una falegnameria: come organizzo il magazzino del legname e dei semilavorati per ridurre i tempi di ricerca del materiale?
+Lavoro in un consorzio di bonifica: spiega come pianificare la manutenzione ordinaria dei canali irrigui in una stagione, con priorita' e risorse.
+Ho un negozio di ottica: proponi un flusso di gestione degli appuntamenti e dei richiami periodici per il controllo della vista.
+Sono amministratore di condominio con 25 stabili: come imposto un calendario delle verifiche obbligatorie (ascensori, caldaie, estintori)?
+Gestisco una palestra: quali clausole deve contenere il contratto di abbonamento e come gestisco le disdette e i rinnovi automatici?

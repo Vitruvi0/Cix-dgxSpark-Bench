@@ -1,0 +1,4 @@
+data: 2026-08-31T19:53:01+02:00
+strada: B - ds4 CLI patchato --score-file (batch offline, 1 load)
+ds4 base: c1d4597 + patch echo-logprobs
+task: arc_it 0-shot limit 50 seed 1234

@@ -1,0 +1,5 @@
+run,livello,esito,errore,prompt_tokens,completion_tokens,conteggio,ttft_ms,tok_s,finish_reason,t_invio,t_fine,fase,punto,rip,warmup,timestamp
+4323e0e020f0f2b07da5c11dd6d815ec,4,ok,,100,39,usage,380.9,23.57,stop,194933.232807033,194935.225758903,draftho,n4,1,False,2026-09-14T16:52:46+0200
+4323e0e020f0f2b07da5c11dd6d815ec,4,ok,,93,77,usage,380.9,23.41,stop,194933.23248009,194936.8603613,draftho,n4,1,False,2026-09-14T16:52:46+0200
+4323e0e020f0f2b07da5c11dd6d815ec,4,ok,,99,48,usage,381.0,20.03,stop,194933.232565978,194935.960340994,draftho,n4,1,False,2026-09-14T16:52:46+0200
+4323e0e020f0f2b07da5c11dd6d815ec,4,ok,,96,256,usage,380.8,33.6,length,194933.232619385,194941.202422603,draftho,n4,1,False,2026-09-14T16:52:46+0200

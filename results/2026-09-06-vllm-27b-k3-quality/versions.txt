@@ -1,0 +1,56 @@
+=== generato: 2026-09-06T18:45:15+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         110           0           6         115
+immagine: nvcr.io/nvidia/vllm:26.08-py3 -> nvcr.io/nvidia/vllm@sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56
+modello: /srv/cix/modelli/Qwen3.8-27B-NVFP4
+1b3c71868d1299e52df6fc907deb202d5132b1ef0f72aae0ef6d15185dd53a5c  config.json
+429430e1b9e65b2cb98eff8cd10a06e70a09cee89c48487a3914684aeb6df57f  model.safetensors.index.json
+2 shard, 23417592488 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: c4017568201b8298b1643a078a1f97a5738aba90 branch bench-w2-spec2
+driver: 5ac6ecc22a095b2959465e22e64fe1150a6b9511befe6c73eab7e4699237c0e7  ./cella-k3.sh
+driver: 7a2b619c7ae09679e1a929c4e4624114d5098dbfd1ee00515a4c1bd9ea5c15dc  ./lancio-mtp3.sh
+driver: 639f83aba3cf26312303af53bacfbe739f4bd07ff95d32c3d81d5fac18ff6269  ./confronta_gsm8k.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+=== generato: 2026-09-06T19:27:02+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         108           0           9         116
+immagine: nvcr.io/nvidia/vllm:26.08-py3 -> nvcr.io/nvidia/vllm@sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56
+modello: /srv/cix/modelli/Qwen3.8-27B-NVFP4
+1b3c71868d1299e52df6fc907deb202d5132b1ef0f72aae0ef6d15185dd53a5c  config.json
+429430e1b9e65b2cb98eff8cd10a06e70a09cee89c48487a3914684aeb6df57f  model.safetensors.index.json
+2 shard, 23417592488 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: c4017568201b8298b1643a078a1f97a5738aba90 branch bench-w2-spec2
+driver: 5ac6ecc22a095b2959465e22e64fe1150a6b9511befe6c73eab7e4699237c0e7  ./cella-k3.sh
+driver: 7a2b619c7ae09679e1a929c4e4624114d5098dbfd1ee00515a4c1bd9ea5c15dc  ./lancio-mtp3.sh
+driver: 639f83aba3cf26312303af53bacfbe739f4bd07ff95d32c3d81d5fac18ff6269  ./confronta_gsm8k.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py

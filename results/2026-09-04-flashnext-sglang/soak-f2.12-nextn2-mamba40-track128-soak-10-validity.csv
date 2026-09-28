@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,2e90a80d,109,stop,si,
+,8,2e90a80d,70,stop,si,
+,8,2e90a80d,46,stop,si,
+,8,2e90a80d,256,length,si,
+,8,2e90a80d,33,stop,si,
+,8,2e90a80d,45,stop,si,
+,8,2e90a80d,256,length,si,
+,8,2e90a80d,33,stop,si,

@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,ba935399,198,stop,si,
+,8,ba935399,93,stop,si,
+,8,ba935399,132,stop,no,degenerato_script
+,8,ba935399,198,stop,no,degenerato_script degenerato_lettere
+,8,ba935399,62,stop,si,
+,8,ba935399,97,stop,no,think_in_content
+,8,ba935399,47,stop,si,
+,8,ba935399,169,stop,no,degenerato_script

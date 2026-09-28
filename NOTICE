@@ -1,0 +1,16 @@
+Cix-dgxSpark-Bench
+Copyright 2026 Advaisor S.r.l.
+
+This product includes software developed at Advaisor S.r.l.
+
+serving/tool-choice-patch/patch_tool_choice_none.py modifies, at image build
+time, one file of vLLM (https://github.com/vllm-project/vllm), which is
+licensed under the Apache License 2.0. No vLLM source file is distributed in
+this repository.
+
+serving/prepare-hybrid-checkpoint.sh is adapted from
+scripts/prepare-hybrid.sh of blazux/qwen3.8-Flash-DGX
+(https://github.com/blazux/qwen3.8-Flash-DGX), licensed under the Apache
+License 2.0.
+
+The names "CIX" and "Advaisor" are not licensed under the Apache License.

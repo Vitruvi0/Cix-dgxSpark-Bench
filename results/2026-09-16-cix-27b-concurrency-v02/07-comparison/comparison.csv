@@ -1,0 +1,75 @@
+metrica,cella,unita,qwen27b,flashnext,delta_assoluto,delta_pct
+decode per richiesta mediana,N1,tok/s,17.74,28.8,11.06,62.3
+decode per richiesta mediana,N2,tok/s,18.32,30.475,12.155,66.3
+decode per richiesta mediana,N4,tok/s,17.88,22.53,4.65,26.0
+decode per richiesta mediana,N8,tok/s,16.77,18.41,1.64,9.8
+decode per richiesta mediana,N4-long,tok/s,8.065000000000001,15.905000000000001,7.84,97.2
+F7 mediana delle 5 ripetizioni,N1,tok/s,16.819483869098374,25.0716543794391,8.2522,49.1
+F7 mediana delle 5 ripetizioni,N2,tok/s,23.847976901852995,38.83754895515636,14.9896,62.9
+F7 mediana delle 5 ripetizioni,N4,tok/s,39.65467887344784,50.63191003656182,10.9772,27.7
+F7 mediana delle 5 ripetizioni,N8,tok/s,51.04584670862649,81.65774335067373,30.6119,60.0
+F7 mediana delle 5 ripetizioni,N4-long,tok/s,14.626834355172035,13.783322123338,-0.8435,-5.8
+TTFT p95,N1,ms,220.1,275.0,54.9,24.9
+TTFT p95,N2,ms,264.3,313.0,48.7,18.4
+TTFT p95,N4,ms,344.5,529.2,184.7,53.6
+TTFT p95,N8,ms,464.8,695.1,230.3,49.5
+TTFT p95,N4-long,ms,14324.6,18415.9,4091.3,28.6
+RAM used peak cella,N4,GiB,111.28,112.11,0.83,0.7
+RAM used peak cella,N8,GiB,111.33,113.45,2.12,1.9
+RAM used peak cella,N4-long,GiB,111.34,117.09,5.75,5.2
+swap-out delta cella,N4,pagine,0,0,0,
+swap-out delta cella,N8,pagine,0,73,73,
+swap-out delta cella,N4-long,pagine,0,0,0,
+swap-out delta cella,N4,GiB,0.0,0.0,0.0,
+swap-out delta cella,N8,GiB,0.0,0.0,0.0,
+swap-out delta cella,N4-long,GiB,0.0,0.0,0.0,
+token totali,N1,token,324,276,-48,-14.8
+token totali,N2,token,1123,1049,-74,-6.6
+token totali,N4,token,2719,1764,-955,-35.1
+token totali,N8,token,4510,5136,626,13.9
+token totali,N4-long,token,1328,1406,78,5.9
+risposte al cap 256,N1,risposte,0,0,0,
+risposte al cap 256,N2,risposte,3,2,-1,-33.3
+risposte al cap 256,N4,risposte,8,3,-5,-62.5
+risposte al cap 256,N8,risposte,12,13,1,8.3
+risposte al cap 256,N4-long,risposte,0,0,0,
+esito cella,N1,,PASS,PASS,,
+esito cella,N2,,PASS,PASS,,
+esito cella,N4,,PASS,PASS,,
+esito cella,N8,,PASS,PASS,,
+esito cella,N4-long,,PASS,PASS,,
+decode per richiesta minimo,N1,tok/s,17.17,28.45,11.28,65.7
+decode per richiesta minimo,N2,tok/s,15.78,25.01,9.23,58.5
+decode per richiesta minimo,N4,tok/s,17.05,19.22,2.17,12.7
+decode per richiesta minimo,N8,tok/s,13.66,15.02,1.36,10.0
+decode per richiesta minimo,N4-long,tok/s,3.96,6.77,2.81,71.0
+decode per richiesta Q1,N1,tok/s,17.66,28.51,10.85,61.4
+decode per richiesta Q1,N2,tok/s,17.395,28.91,11.515,66.2
+decode per richiesta Q1,N4,tok/s,17.6275,21.7075,4.08,23.1
+decode per richiesta Q1,N8,tok/s,16.0875,17.27,1.1825,7.4
+decode per richiesta Q1,N4-long,tok/s,6.069999999999999,10.84,4.77,78.6
+decode per richiesta Q3,N1,tok/s,17.89,29.59,11.7,65.4
+decode per richiesta Q3,N2,tok/s,18.872500000000002,31.08,12.2075,64.7
+decode per richiesta Q3,N4,tok/s,18.3325,25.3825,7.05,38.5
+decode per richiesta Q3,N8,tok/s,17.4225,20.365,2.9425,16.9
+decode per richiesta Q3,N4-long,tok/s,11.8225,20.04,8.2175,69.5
+TTFT minimo,N1,ms,219.4,234.1,14.7,6.7
+TTFT minimo,N2,ms,169.3,299.7,130.4,77.0
+TTFT minimo,N4,ms,186.5,395.6,209.1,112.1
+TTFT minimo,N8,ms,437.0,528.3,91.3,20.9
+TTFT minimo,N4-long,ms,4045.7,8746.6,4700.9,116.2
+TTFT mediana,N1,ms,220.0,268.4,48.4,22.0
+TTFT mediana,N2,ms,239.75,301.6,61.85,25.8
+TTFT mediana,N4,ms,328.65,524.4,195.75,59.6
+TTFT mediana,N8,ms,443.0,561.5,118.5,26.7
+TTFT mediana,N4-long,ms,9532.75,15383.599999999999,5850.85,61.4
+TTFT massimo,N1,ms,220.1,275.0,54.9,24.9
+TTFT massimo,N2,ms,264.3,313.0,48.7,18.4
+TTFT massimo,N4,ms,344.7,529.2,184.5,53.5
+TTFT massimo,N8,ms,465.2,695.3,230.1,49.5
+TTFT massimo,N4-long,ms,14330.3,18682.8,4352.5,30.4
+REFERENCE_TARGET 40 Δ% mediana decode,N1,%,-55.6,-28.0,27.6,
+REFERENCE_TARGET 40 Δ% mediana decode,N2,%,-54.2,-23.8,30.4,
+REFERENCE_TARGET 40 Δ% mediana decode,N4,%,-55.3,-43.7,11.6,
+REFERENCE_TARGET 40 Δ% mediana decode,N8,%,-58.1,-54.0,4.1,
+REFERENCE_TARGET 40 Δ% mediana decode,N4-long,%,-79.8,-60.2,19.6,

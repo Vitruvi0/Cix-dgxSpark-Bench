@@ -1,0 +1,176 @@
+ca9df5957d649310960eaaad76fcd2d785647ee038bc1071919736d6d21efc13  /home/cix/cix/Agents/cix-benchmarks/run.sh
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+4a1bae93d9ab7cba2ef57b86f67a57a38570ed875149be8b221e0b26ce7bea5b  ./driver-inspect.sh
+b5b190e0b2947143f4640b3fe01c3ed3e9b4917ab7ca539f7c8609d49b548e1a  ./lancio-flashnext.sh
+86931eff1560d23c9da5cfc7a0a87de0788546ac0c831abc16929ab3ea2784b6  ./estrai_inspect.py
+2d908fd3ecbf11d9911bd2e075856cd50145363e914fed67a344c7d65fe87d16  ./prerequisiti.py
+4eb5f560b13fa3182afe96752b2079853e85bb1c52d7783a89d2934d98c3ba57  ./test_driver.py
+d933f7c12e7e0b9b165c26a6b3170d4de88226489c33ed40ee76300786f084e4  ./test_estrai_inspect.py
+0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698  generate.json
+db5a44d0aefe7b15ad3a03e0d4840cb5e3928e85299541db222797d810132f83  README.md
+0.3.261
+agent-client-protocol==0.12.1
+aioboto3==15.5.0
+aiobotocore==2.25.1
+aiofiles==25.1.0
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.3
+aioitertools==0.13.0
+aiosignal==1.4.0
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.14.2
+attrs==26.1.0
+backoff==2.2.1
+beautifulsoup4==4.15.0
+boto3==1.40.61
+botocore==1.40.61
+certifi==2026.7.22
+charset-normalizer==3.5.1
+click==8.5.0
+cloudpickle==3.1.2
+datasets==5.0.1
+debugpy==1.8.21
+defusedxml==0.7.1
+dill==0.4.1
+docstring_parser==0.18.0
+fastapi==0.141.1
+filelock==3.32.5
+frozenlist==1.8.0
+fsspec==2025.9.0
+h11==0.16.0
+hf-xet==1.6.0
+httpcore==1.0.9
+httpcore2==2.12.0
+httpx==0.28.1
+httpx2==2.12.0
+huggingface_hub==1.29.0
+idna==3.19
+ijson==3.5.1
+immutabledict==4.3.1
+inspect_ai==0.3.261
+inspect_evals==0.19.0
+instruction_following_eval @ git+https://github.com/josejg/instruction_following_eval@0c495b2f95155e8b10acb919ae283bfb4d5be6e2
+Jinja2==3.1.6
+jiter==0.16.0
+jmespath==1.1.0
+joblib==1.6.0
+jsonlines==4.0.0
+jsonpatch==1.33
+jsonpath-ng==1.8.0
+jsonpointer==3.1.1
+jsonref==1.1.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+langdetect==1.0.9
+linkify-it-py==2.2.0
+markdown-it-py==4.2.0
+MarkupSafe==3.0.3
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+mmh3==5.3.0
+mpmath==1.4.1
+multidict==6.7.1
+multiprocess==0.70.19
+nest-asyncio2==1.7.2
+nltk==3.10.3
+numpy==2.5.2
+openai==3.7.0
+packaging==26.3
+pandas==3.0.5
+pathlib_abc==0.5.2
+pillow==12.3.0
+platformdirs==4.11.7
+propcache==0.5.2
+psutil==7.2.2
+pyarrow==25.0.1
+pydantic==2.13.5
+pydantic_core==2.46.5
+Pygments==2.21.0
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.3
+PyYAML==6.0.3
+referencing==0.37.0
+regex==2026.9.3
+requests==2.34.2
+rich==15.0.0
+rpds-py==2026.6.3
+s3fs==2025.9.0
+s3transfer==0.14.0
+semver==3.0.4
+shellingham==1.5.4
+shortuuid==1.0.13
+six==1.17.0
+sniffio==1.3.1
+soupsieve==2.9.2
+starlette==1.6.0
+tenacity==9.1.4
+textual==8.2.8
+tiktoken==0.14.0
+toml==0.10.2
+tqdm==4.70.0
+truststore==0.10.4
+typer==0.27.2
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+universal_pathlib==0.3.10
+urllib3==2.7.0
+uvicorn==0.52.4
+wrapt==1.17.3
+xxhash==4.0.1
+yarl==1.24.5
+zipfile-zstd==0.0.4
+zipp==4.1.0
+zstandard==0.25.0
+inspect_ai=0.3.261
+inspect_evals=0.19.0
+openai=3.7.0
+datasets=5.0.1
+huggingface_hub=1.29.0
+mpmath=1.4.1
+instruction_following_eval=0.1.0
+langdetect=1.0.9
+nltk=3.10.3
+BFCL: /home/cix/.cache/inspect_evals/BFCL exists=True
+HF_HUB: /home/cix/.cache/huggingface/hub exists=True
+HF_DATASETS: /home/cix/.cache/huggingface/datasets exists=True
+NLTK: /home/cix/.cache/nltk_data exists=True
+Failed to import backend class WebSearchAPI: No module named 'html2text'
+Failed to import backend class MemoryAPI_kv: No module named 'memory_api_metaclass'
+Failed to import backend class MemoryAPI_vector: No module named 'memory_api_metaclass'
+Failed to import backend class MemoryAPI_rec_sum: No module named 'memory_api_metaclass'
+{"task": "bfcl", "task_version": 7, "categories_arg": "multi_turn_base", "n_dataset": 200, "n_selected": 200, "selection": "categoria intera, nessun limit, no shuffle, epochs=1", "ids": ["multi_turn_base_0", "multi_turn_base_1", "multi_turn_base_10", "multi_turn_base_100", "multi_turn_base_101", "multi_turn_base_102", "multi_turn_base_103", "multi_turn_base_104", "multi_turn_base_105", "multi_turn_base_106", "multi_turn_base_107", "multi_turn_base_108", "multi_turn_base_109", "multi_turn_base_11", "multi_turn_base_110", "multi_turn_base_111", "multi_turn_base_112", "multi_turn_base_113", "multi_turn_base_114", "multi_turn_base_115", "multi_turn_base_116", "multi_turn_base_117", "multi_turn_base_118", "multi_turn_base_119", "multi_turn_base_12", "multi_turn_base_120", "multi_turn_base_121", "multi_turn_base_122", "multi_turn_base_123", "multi_turn_base_124", "multi_turn_base_125", "multi_turn_base_126", "multi_turn_base_127", "multi_turn_base_128", "multi_turn_base_129", "multi_turn_base_13", "multi_turn_base_130", "multi_turn_base_131", "multi_turn_base_132", "multi_turn_base_133", "multi_turn_base_134", "multi_turn_base_135", "multi_turn_base_136", "multi_turn_base_137", "multi_turn_base_138", "multi_turn_base_139", "multi_turn_base_14", "multi_turn_base_140", "multi_turn_base_141", "multi_turn_base_142", "multi_turn_base_143", "multi_turn_base_144", "multi_turn_base_145", "multi_turn_base_146", "multi_turn_base_147", "multi_turn_base_148", "multi_turn_base_149", "multi_turn_base_15", "multi_turn_base_150", "multi_turn_base_151", "multi_turn_base_152", "multi_turn_base_153", "multi_turn_base_154", "multi_turn_base_155", "multi_turn_base_156", "multi_turn_base_157", "multi_turn_base_158", "multi_turn_base_159", "multi_turn_base_16", "multi_turn_base_160", "multi_turn_base_161", "multi_turn_base_162", "multi_turn_base_163", "multi_turn_base_164", "multi_turn_base_165", "multi_turn_base_166", "multi_turn_base_167", "multi_turn_base_168", "multi_turn_base_169", "multi_turn_base_17", "multi_turn_base_170", "multi_turn_base_171", "multi_turn_base_172", "multi_turn_base_173", "multi_turn_base_174", "multi_turn_base_175", "multi_turn_base_176", "multi_turn_base_177", "multi_turn_base_178", "multi_turn_base_179", "multi_turn_base_18", "multi_turn_base_180", "multi_turn_base_181", "multi_turn_base_182", "multi_turn_base_183", "multi_turn_base_184", "multi_turn_base_185", "multi_turn_base_186", "multi_turn_base_187", "multi_turn_base_188", "multi_turn_base_189", "multi_turn_base_19", "multi_turn_base_190", "multi_turn_base_191", "multi_turn_base_192", "multi_turn_base_193", "multi_turn_base_194", "multi_turn_base_195", "multi_turn_base_196", "multi_turn_base_197", "multi_turn_base_198", "multi_turn_base_199", "multi_turn_base_2", "multi_turn_base_20", "multi_turn_base_21", "multi_turn_base_22", "multi_turn_base_23", "multi_turn_base_24", "multi_turn_base_25", "multi_turn_base_26", "multi_turn_base_27", "multi_turn_base_28", "multi_turn_base_29", "multi_turn_base_3", "multi_turn_base_30", "multi_turn_base_31", "multi_turn_base_32", "multi_turn_base_33", "multi_turn_base_34", "multi_turn_base_35", "multi_turn_base_36", "multi_turn_base_37", "multi_turn_base_38", "multi_turn_base_39", "multi_turn_base_4", "multi_turn_base_40", "multi_turn_base_41", "multi_turn_base_42", "multi_turn_base_43", "multi_turn_base_44", "multi_turn_base_45", "multi_turn_base_46", "multi_turn_base_47", "multi_turn_base_48", "multi_turn_base_49", "multi_turn_base_5", "multi_turn_base_50", "multi_turn_base_51", "multi_turn_base_52", "multi_turn_base_53", "multi_turn_base_54", "multi_turn_base_55", "multi_turn_base_56", "multi_turn_base_57", "multi_turn_base_58", "multi_turn_base_59", "multi_turn_base_6", "multi_turn_base_60", "multi_turn_base_61", "multi_turn_base_62", "multi_turn_base_63", "multi_turn_base_64", "multi_turn_base_65", "multi_turn_base_66", "multi_turn_base_67", "multi_turn_base_68", "multi_turn_base_69", "multi_turn_base_7", "multi_turn_base_70", "multi_turn_base_71", "multi_turn_base_72", "multi_turn_base_73", "multi_turn_base_74", "multi_turn_base_75", "multi_turn_base_76", "multi_turn_base_77", "multi_turn_base_78", "multi_turn_base_79", "multi_turn_base_8", "multi_turn_base_80", "multi_turn_base_81", "multi_turn_base_82", "multi_turn_base_83", "multi_turn_base_84", "multi_turn_base_85", "multi_turn_base_86", "multi_turn_base_87", "multi_turn_base_88", "multi_turn_base_89", "multi_turn_base_9", "multi_turn_base_90", "multi_turn_base_91", "multi_turn_base_92", "multi_turn_base_93", "multi_turn_base_94", "multi_turn_base_95", "multi_turn_base_96", "multi_turn_base_97", "multi_turn_base_98", "multi_turn_base_99"], "categories": {"multi_turn_base": 200}, "turni_per_esempio": {"1": 3, "2": 40, "3": 50, "4": 50, "5": 43, "6": 12, "7": 2}, "samples_sha256": "c4f5ba1568b5fbc434d240f844202d5b348c100fb48f3561b16c8062e1c36b7e"}
+PREREQUISITI_DATASET_OK
+=== generato: 2026-09-10T10:12:27+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         105           0          13         116
+immagine: flashnext-vllm-cix:blazux-209646c -> flashnext-vllm-cix@sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 6ed89947038921049d304363f40974822ba03d05 branch bench-w2-chiusura
+driver: 4a1bae93d9ab7cba2ef57b86f67a57a38570ed875149be8b221e0b26ce7bea5b  ./driver-inspect.sh
+driver: 348d8868ca391e6bcb8f0c5b84a33b079d65b59e1fb7058cca998d9f4ca8122e  ./lancio-effettivo-flashnext.sh
+driver: b5b190e0b2947143f4640b3fe01c3ed3e9b4917ab7ca539f7c8609d49b548e1a  ./lancio-flashnext.sh
+driver: 86931eff1560d23c9da5cfc7a0a87de0788546ac0c831abc16929ab3ea2784b6  ./estrai_inspect.py
+driver: 2d908fd3ecbf11d9911bd2e075856cd50145363e914fed67a344c7d65fe87d16  ./prerequisiti.py
+driver: 4eb5f560b13fa3182afe96752b2079853e85bb1c52d7783a89d2934d98c3ba57  ./test_driver.py
+driver: d933f7c12e7e0b9b165c26a6b3170d4de88226489c33ed40ee76300786f084e4  ./test_estrai_inspect.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+fase=flashnext image_id=sha256:c4161c42165f2b5dbcc69f2ccb63bb622682ca78d5fb315c14c5dc5df79ecd6e solver=openai/flashnext grader=openai/flashnext (ruolo stesso server, scorer deterministico; 0 chiamate grader attese)

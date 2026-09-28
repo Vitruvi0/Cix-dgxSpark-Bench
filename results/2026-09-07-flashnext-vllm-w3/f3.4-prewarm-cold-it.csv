@@ -1,0 +1,4 @@
+prompt_tokens,completion_tokens,ttft_ms,prefill_tok_s,decode_tok_s,tok_s_wall,itl_ms_media,itl_ms_p50,itl_ms_p95,n_chunk,finish_reason,classe,run,timestamp
+8024,68,14858.0,540.0,24.18,3.86,41.3,90.2,112.6,32,stop,lungo8k,1,2026-09-07T15:50:21+0200
+8024,66,10932.7,733.9,21.87,4.75,45.7,90.9,113.6,34,stop,lungo8k,2,2026-09-07T15:50:35+0200
+8028,71,10123.2,793.0,20.69,5.26,48.3,90.0,117.6,38,stop,lungo8k,3,2026-09-07T15:50:49+0200

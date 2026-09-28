@@ -1,0 +1,75 @@
+{
+  "boot": {
+    "base": {
+      "completo": true,
+      "watchdog": false,
+      "entro_boot": 20,
+      "famiglia": "A",
+      "vs_A": 20,
+      "vs_B": 1,
+      "identici_con_A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "kv_cache_token": 861744
+    },
+    "tcnone": {
+      "completo": true,
+      "watchdog": false,
+      "entro_boot": 20,
+      "famiglia": "A",
+      "vs_A": 20,
+      "vs_B": 1,
+      "identici_con_A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "kv_cache_token": 808156
+    }
+  },
+  "fra_boot_p1": 20,
+  "verdetto": [
+    "TCNONE RIPRODUCE NODRAFT",
+    "nella stessa sessione anche tcnone da' A: il boot tcnone del 15/09 notte non si riproduce con la sola immagine."
+  ],
+  "riferimenti": {
+    "A": "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-r2/equiv-nodraft-p1.jsonl",
+    "B": "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-b6-vllm-tcnone/equiv-tcnone-p1.jsonl"
+  }
+}

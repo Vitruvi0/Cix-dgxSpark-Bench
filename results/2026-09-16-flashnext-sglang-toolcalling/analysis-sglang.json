@@ -1,0 +1,301 @@
+{
+  "prove": {
+    "senza-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 256,
+      "caratteri": 1014,
+      "caratteri_reasoning": 0,
+      "sha256_content": "f0498e3a9ec4f0c5",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "tools-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 42,
+      "caratteri": 105,
+      "caratteri_reasoning": 0,
+      "sha256_content": "3bdd3c4772bca658",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "senza-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 256,
+      "caratteri": 1081,
+      "caratteri_reasoning": 0,
+      "sha256_content": "8e8c70111d42184a",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "tools-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 50,
+      "caratteri": 145,
+      "caratteri_reasoning": 0,
+      "sha256_content": "a2528c13ed29d714",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "senza-3": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 256,
+      "caratteri": 913,
+      "caratteri_reasoning": 0,
+      "sha256_content": "392597cc0748d330",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "tools-3": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 39,
+      "caratteri": 87,
+      "caratteri_reasoning": 0,
+      "sha256_content": "a20f4cea7cd59d21",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "senza-4": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 256,
+      "caratteri": 953,
+      "caratteri_reasoning": 0,
+      "sha256_content": "121347bae4744f5a",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "senza-5": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 256,
+      "caratteri": 990,
+      "caratteri_reasoning": 0,
+      "sha256_content": "cb10432574dd2d1c",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    },
+    "controllo-auto": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "errori_stream": 0,
+      "done": 1,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 25,
+      "caratteri": 0,
+      "caratteri_reasoning": 0,
+      "sha256_content": "e3b0c44298fc1c14",
+      "markup_content": {
+        "<tool_call>": 0,
+        "<function=": 0
+      },
+      "markup_reasoning": {
+        "<tool_call>": 0,
+        "<function=": 0
+      }
+    }
+  },
+  "verdetto": "NON CONCLUSIVO (TRIGGER NON RIPRODOTTO)",
+  "condizioni": [
+    {
+      "etichetta": "NON CONCLUSIVO (TRIGGER NON RIPRODOTTO)",
+      "motivi": [
+        "nessuna prova senza tools con markup o tool call"
+      ]
+    }
+  ],
+  "descrittivi": {
+    "senza_con_markup": 0,
+    "tools_con_markup": 0,
+    "senza_content_distinti": 5,
+    "nomi_tools": {
+      "tools-1": [
+        "list_files"
+      ],
+      "tools-2": [
+        "list_files"
+      ],
+      "tools-3": [
+        "list_files"
+      ],
+      "controllo-auto": [
+        "list_files"
+      ]
+    },
+    "token_senza": {
+      "senza-1": 256,
+      "senza-2": 256,
+      "senza-3": 256,
+      "senza-4": 256,
+      "senza-5": 256
+    },
+    "finish": {
+      "senza-1": [
+        "length"
+      ],
+      "tools-1": [
+        "tool_calls"
+      ],
+      "senza-2": [
+        "length"
+      ],
+      "tools-2": [
+        "tool_calls"
+      ],
+      "senza-3": [
+        "length"
+      ],
+      "tools-3": [
+        "tool_calls"
+      ],
+      "senza-4": [
+        "length"
+      ],
+      "senza-5": [
+        "length"
+      ],
+      "controllo-auto": [
+        "tool_calls"
+      ]
+    }
+  }
+}

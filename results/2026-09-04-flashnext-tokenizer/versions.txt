@@ -1,0 +1,32 @@
+generato: 2026-09-02T18:20:35+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           6          99           0          15         114
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 422b45be5d7d937aed8d76e84ae753385f846c83 branch bench-flash-next
+driver: 1f91ec610d93ca62cdfcf52758178e6f11715c97df2f6ca0c3c89e4ca155e708  ./esegui-tokenizer.sh
+driver: 6a612ea78e097b149feb963d3eb81505b173c822408bc511d6c275d8bdb0ace7  ./scarica-riferimenti.sh
+driver: 1972d54bbea62ebda84d4d565c3dc373d95b692a98b9b652f65b6aee9ddadc81  ./template-overhead.py
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: b31f39d94a031a092ba93c19752f92eba118d86616a4d86d07baf128d2a9c7e7  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+tokenizer riferimento: /srv/cix/modelli/tokenizer-qwen3-151k (Qwen/Qwen3-8B)
+aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4  /srv/cix/modelli/tokenizer-qwen3-151k/tokenizer.json
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75  corpora/inglese.txt
+tokenizers 0.23.1 transformers 5.16.1

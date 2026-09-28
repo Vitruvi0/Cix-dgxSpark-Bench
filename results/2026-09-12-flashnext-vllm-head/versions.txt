@@ -1,0 +1,33 @@
+=== generato: 2026-09-12T17:04:57+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         111           0           7         117
+immagine: flashnext-vllm-cix:blazux-ad8920d -> flashnext-vllm-cix@sha256:bddd493d963543bf11527c09ff78b353635ac1182724a8b6c8c50d8602941684
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX ad8920d4a795a1fabe47edad2d7f336d9cd2eb68 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 6ae6b79056f81bc7f650d5b1124ba4d45c89d7a2 branch bench-vllm-head-1209
+driver: 15400430f78775e8d8b81da00eb592b67b4ce4ee497822489e4d636ec13c8c74  ./00-aggiorna-blazux.sh
+driver: c0eaebc8dc809ecd7a556ac239167a5ebdeb07da4a37c7b992d9d8a17f666adf  ./01-build-vllm-head.sh
+driver: be8f4bcff6d8c5568ef6aae6ebea63a198dbdce3efed91cb2d2b971921b8b3ac  ./02-controlla-hybrid.sh
+driver: 3a45643ddd124028022c02c90a8b6304ebb14d97bf5e2c9ec0b5ff607d7b4f1d  ./99-lancia.sh
+driver: 062bf1f57e811a24695d65dd12bfb54408cacdc49cae08753ad3c8f8ad937bed  ./driver-vllm-head.sh
+driver: d776ab853ba5c3c03801c37e74bc7e3e9688daf4ab13fad30c208010781064e7  ./lancio-f3.6-head-nodraft.sh
+driver: aec85d25800764485ef5c001992a51facc842b4f53594e791b2767918ffd9860  ./lancio-f3.6-head.sh
+driver: 37585c610e15dc618fd9ae8e7258934ed976effcba67312e2fa1a0e2d2d5cd2b  ./watchdog-memoria.sh
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 669741f7d3c2b09d5608dba1ff1f1250db19a9c74662b95dd3a9f55df2ffd7bb  validita.py

@@ -1,0 +1,3 @@
+run,livello,esito,errore,prompt_tokens,completion_tokens,conteggio,ttft_ms,tok_s,finish_reason,t_invio,t_fine,fase,punto,rip,warmup,timestamp
+2b0f2d756ebd4cc8b2a3574a59d2a700,2,ok,,101,30,usage,308.1,23.73,stop,190942.77715409,190944.307459002,nodraft,n2,3,False,2026-09-14T15:46:15+0200
+2b0f2d756ebd4cc8b2a3574a59d2a700,2,ok,,94,68,usage,307.8,26.95,stop,190942.777065289,190945.57092688,nodraft,n2,3,False,2026-09-14T15:46:15+0200

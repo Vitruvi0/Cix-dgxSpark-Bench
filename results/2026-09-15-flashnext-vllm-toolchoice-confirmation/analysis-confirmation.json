@@ -1,0 +1,228 @@
+{
+  "prove": {
+    "patch-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "null-1": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 16,
+      "nomi": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "null-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 16,
+      "nomi": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "patch-2": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "patch-3": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "stop"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "null-3": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 16,
+      "nomi": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "completion_tokens": 130,
+      "caratteri": 117,
+      "sha256_content": "ff6c5256d7626b03"
+    },
+    "patch-max40": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": true,
+      "finish": [
+        "length"
+      ],
+      "tool_call_delta": 0,
+      "nomi": [],
+      "completion_tokens": 40,
+      "caratteri": 115,
+      "sha256_content": "a27e80b7e891b69b"
+    },
+    "null-max40": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 40,
+      "caratteri": 115,
+      "sha256_content": "a27e80b7e891b69b"
+    },
+    "controllo-auto": {
+      "presente": true,
+      "http": 200,
+      "trasporto": null,
+      "strict_ok": false,
+      "finish": [
+        "tool_calls"
+      ],
+      "tool_call_delta": 4,
+      "nomi": [
+        "list_files"
+      ],
+      "completion_tokens": 25,
+      "caratteri": 0,
+      "sha256_content": "e3b0c44298fc1c14"
+    }
+  },
+  "verdetto": "PATCH VALIDATA SUL SERVER",
+  "motivi": [],
+  "coppie": {
+    "patch-1/null-1": {
+      "token": [
+        130,
+        130
+      ],
+      "finish": [
+        [
+          "stop"
+        ],
+        [
+          "tool_calls"
+        ]
+      ],
+      "nomi_controllo": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "content_uguale": true
+    },
+    "patch-2/null-2": {
+      "token": [
+        130,
+        130
+      ],
+      "finish": [
+        [
+          "stop"
+        ],
+        [
+          "tool_calls"
+        ]
+      ],
+      "nomi_controllo": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "content_uguale": true
+    },
+    "patch-3/null-3": {
+      "token": [
+        130,
+        130
+      ],
+      "finish": [
+        [
+          "stop"
+        ],
+        [
+          "tool_calls"
+        ]
+      ],
+      "nomi_controllo": [
+        "list_files",
+        "glob_files",
+        "glob_files"
+      ],
+      "content_uguale": true
+    },
+    "patch-max40/null-max40": {
+      "token": [
+        40,
+        40
+      ],
+      "finish": [
+        [
+          "length"
+        ],
+        [
+          "tool_calls"
+        ]
+      ],
+      "nomi_controllo": [
+        "list_files"
+      ],
+      "content_uguale": true
+    }
+  }
+}

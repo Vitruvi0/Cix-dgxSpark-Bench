@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,38c70d56,30,stop,si,
+,8,38c70d56,216,stop,no,degenerato_script degenerato_lettere
+,8,38c70d56,55,stop,si,
+,8,38c70d56,44,stop,si,
+,8,38c70d56,95,stop,si,
+,8,38c70d56,30,stop,si,
+,8,38c70d56,256,length,no,think_in_content degenerato_script degenerato_lettere
+,8,38c70d56,256,length,no,degenerato_script degenerato_lettere

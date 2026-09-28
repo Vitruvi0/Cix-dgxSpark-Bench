@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,d25226de,51,stop,si,
+,8,d25226de,70,stop,si,
+,8,d25226de,48,stop,si,
+,8,d25226de,256,length,si,
+,8,d25226de,48,stop,si,
+,8,d25226de,96,stop,si,
+,8,d25226de,256,length,si,
+,8,d25226de,49,stop,si,

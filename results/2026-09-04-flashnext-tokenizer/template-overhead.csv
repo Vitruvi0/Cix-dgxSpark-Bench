@@ -1,0 +1,13 @@
+thinking,effort,tool,token_totali,token_messaggio,overhead
+False,,0,23,11,12
+False,,1,310,11,299
+False,,3,482,11,471
+True,low,0,51,11,40
+True,low,1,334,11,323
+True,low,3,506,11,495
+True,medium,0,21,11,10
+True,medium,1,308,11,297
+True,medium,3,480,11,469
+True,xhigh,0,63,11,52
+True,xhigh,1,346,11,335
+True,xhigh,3,518,11,507

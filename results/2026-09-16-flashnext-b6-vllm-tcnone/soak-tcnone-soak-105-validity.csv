@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,b20e4790,65,stop,si,
+,8,b20e4790,70,stop,si,
+,8,b20e4790,60,stop,si,
+,8,b20e4790,256,length,si,
+,8,b20e4790,67,stop,si,
+,8,b20e4790,31,stop,si,
+,8,b20e4790,256,length,si,
+,8,b20e4790,36,stop,si,

@@ -1,0 +1,1145 @@
+=== generato: 2026-09-15T18:32:30+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           7         108           0           7         114
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX ad8920d4a795a1fabe47edad2d7f336d9cd2eb68 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 2f2bd9fec2439fd3ea2aee1a7251f5fb55c15f9f branch bench-caselle-1609
+driver: e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684  ./ricetta-sglang.sh
+driver: 40ca48f376138e2b6d60e22de74d2cad555d8c2a2bbe1bf03cd248753674fc3a  ./analisi_multiturn.py
+driver: b4c784559e8a7212a4270f251aa969418f3378406127599d3fe364e438a3f7c1  ./analizza_sglang128.py
+driver: 92740833140ffbe5577188a44ba9a5e77ac128819d71700c2ee7e5d6dd6852e1  ./driver_inspect.py
+driver: 7812a31ba11fcdd71876a72d7a0752577b428ecd710fad4b88021f2f03a38e1d  ./estrai_inspect.py
+driver: 988996cb354a27f3218735f5419050523a0601628905020605d9485ed904ae44  ./identita_campioni.py
+driver: 36761b2644fbce820ace04bb7b7ae52a4037764b404b6219cb1a991889833061  ./prerequisiti.py
+driver: 9a0a234f9e975b1fc526a9bc2e9e90259c4919a1925c007a5658eb123e20b5ff  ./test_analizza_sglang128.py
+driver: 1796bbed7bea171d4b85c54b345a970b1e767d0e787c8dd539f66b585adf08fc  ./test_driver_sglang128.py
+driver: 2e68a84e5a0fa674e91460eb5fcff03b7e307a8f58c9828c996de05d513405a6  ./test_estrai_inspect.py
+driver: 5f2fd41ee49c5b15c8cdf2ff69992c0be05be5a981c4be24c61a881318b10d87  ./test_identita_campioni.py
+driver: 43cd174c1b648b758115c3332095633566c07541c8d06aa937022e53069255f0  ./test_verifica_richieste.py
+driver: 92fcc5fe1f0a058dba21271165cd7dffb0b2f20cd6fefd82015fe7276a7fdf82  ./verifica_richieste.py
+driver: fb9a6fea0d930cd3ea60f6849e3228b1470079678fc84c3be97226042fe9a4f2  ./verifica_wire.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 669741f7d3c2b09d5608dba1ff1f1250db19a9c74662b95dd3a9f55df2ffd7bb  validita.py
+
+cella inspect sglang128; immagine sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1; modello /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4; branch bench-caselle-1609 commit 2f2bd9fec2439fd3ea2aee1a7251f5fb55c15f9f
+{
+  "directory": "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4",
+  "metadata_sha256": {
+    "config.json": "e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624",
+    "model.safetensors.index.json": "da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84",
+    "tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+    "tokenizer_config.json": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+    "generation_config.json": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+  },
+  "shard": [
+    {
+      "nome": "layer-00000-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258879503425633
+    },
+    {
+      "nome": "layer-00000-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258889230445347
+    },
+    {
+      "nome": "layer-00000-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258889436445763
+    },
+    {
+      "nome": "layer-00000-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258890480447872
+    },
+    {
+      "nome": "layer-00001-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258891458449846
+    },
+    {
+      "nome": "layer-00001-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258898303463630
+    },
+    {
+      "nome": "layer-00001-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258903257473573
+    },
+    {
+      "nome": "layer-00001-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258907824482713
+    },
+    {
+      "nome": "layer-00002-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258906558480181
+    },
+    {
+      "nome": "layer-00002-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258909665486390
+    },
+    {
+      "nome": "layer-00002-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258910796488647
+    },
+    {
+      "nome": "layer-00002-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258917410501817
+    },
+    {
+      "nome": "layer-00003-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258922613512142
+    },
+    {
+      "nome": "layer-00003-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258924031514951
+    },
+    {
+      "nome": "layer-00003-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258923575514048
+    },
+    {
+      "nome": "layer-00003-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258929301525369
+    },
+    {
+      "nome": "layer-00004-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258932005530702
+    },
+    {
+      "nome": "layer-00004-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258933294533242
+    },
+    {
+      "nome": "layer-00004-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258940583547568
+    },
+    {
+      "nome": "layer-00004-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258939688545812
+    },
+    {
+      "nome": "layer-00005-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258945110556437
+    },
+    {
+      "nome": "layer-00005-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258945768557724
+    },
+    {
+      "nome": "layer-00005-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258950308566592
+    },
+    {
+      "nome": "layer-00005-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258951394568710
+    },
+    {
+      "nome": "layer-00006-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258957601580792
+    },
+    {
+      "nome": "layer-00006-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258957956581481
+    },
+    {
+      "nome": "layer-00006-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258962713590711
+    },
+    {
+      "nome": "layer-00006-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258966343597738
+    },
+    {
+      "nome": "layer-00007-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258968971602817
+    },
+    {
+      "nome": "layer-00007-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258970148605089
+    },
+    {
+      "nome": "layer-00007-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258974882614214
+    },
+    {
+      "nome": "layer-00007-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258975867616109
+    },
+    {
+      "nome": "layer-00008-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258981174626306
+    },
+    {
+      "nome": "layer-00008-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258980030624110
+    },
+    {
+      "nome": "layer-00008-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258989809642835
+    },
+    {
+      "nome": "layer-00008-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258987827639048
+    },
+    {
+      "nome": "layer-00009-experts-0000-0127.safetensors",
+      "byte": 354098208,
+      "mtime_ns": 1788258993234649371
+    },
+    {
+      "nome": "layer-00009-experts-0128-0255.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258992907648747
+    },
+    {
+      "nome": "layer-00009-experts-0256-0383.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788258994738652237
+    },
+    {
+      "nome": "layer-00009-experts-0384-0511.safetensors",
+      "byte": 354099528,
+      "mtime_ns": 1788259000936664026
+    },
+    {
+      "nome": "layer-00010-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259003438668773
+    },
+    {
+      "nome": "layer-00010-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259011481683996
+    },
+    {
+      "nome": "layer-00010-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259010640682407
+    },
+    {
+      "nome": "layer-00010-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259010124681432
+    },
+    {
+      "nome": "layer-00011-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259013187687217
+    },
+    {
+      "nome": "layer-00011-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259020556701097
+    },
+    {
+      "nome": "layer-00011-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259023356706358
+    },
+    {
+      "nome": "layer-00011-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259026231711752
+    },
+    {
+      "nome": "layer-00012-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259024631708751
+    },
+    {
+      "nome": "layer-00012-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259031531721676
+    },
+    {
+      "nome": "layer-00012-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259036400730770
+    },
+    {
+      "nome": "layer-00012-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259038723735101
+    },
+    {
+      "nome": "layer-00013-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259038916735460
+    },
+    {
+      "nome": "layer-00013-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259040866739092
+    },
+    {
+      "nome": "layer-00013-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259044288745456
+    },
+    {
+      "nome": "layer-00013-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259050313756637
+    },
+    {
+      "nome": "layer-00014-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259054866765065
+    },
+    {
+      "nome": "layer-00014-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259055799766789
+    },
+    {
+      "nome": "layer-00014-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259055223765725
+    },
+    {
+      "nome": "layer-00014-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259060404775291
+    },
+    {
+      "nome": "layer-00015-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259065048783847
+    },
+    {
+      "nome": "layer-00015-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259070652794145
+    },
+    {
+      "nome": "layer-00015-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259073292798988
+    },
+    {
+      "nome": "layer-00015-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259072514797561
+    },
+    {
+      "nome": "layer-00016-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259072067796741
+    },
+    {
+      "nome": "layer-00016-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259080941812985
+    },
+    {
+      "nome": "layer-00016-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259084157818855
+    },
+    {
+      "nome": "layer-00016-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259083697818016
+    },
+    {
+      "nome": "layer-00017-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259090527830457
+    },
+    {
+      "nome": "layer-00017-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259087859825602
+    },
+    {
+      "nome": "layer-00017-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259099002845842
+    },
+    {
+      "nome": "layer-00017-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259096241840836
+    },
+    {
+      "nome": "layer-00018-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259099809847304
+    },
+    {
+      "nome": "layer-00018-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259106098858679
+    },
+    {
+      "nome": "layer-00018-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259104240855322
+    },
+    {
+      "nome": "layer-00018-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259111339868135
+    },
+    {
+      "nome": "layer-00019-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259112448870133
+    },
+    {
+      "nome": "layer-00019-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259122616888407
+    },
+    {
+      "nome": "layer-00019-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259116288877043
+    },
+    {
+      "nome": "layer-00019-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259120320884287
+    },
+    {
+      "nome": "layer-00020-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259124727892191
+    },
+    {
+      "nome": "layer-00020-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259125300893217
+    },
+    {
+      "nome": "layer-00020-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259130636902764
+    },
+    {
+      "nome": "layer-00020-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259132613906296
+    },
+    {
+      "nome": "layer-00021-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259138236916325
+    },
+    {
+      "nome": "layer-00021-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259140019919501
+    },
+    {
+      "nome": "layer-00021-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259141723922533
+    },
+    {
+      "nome": "layer-00021-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259148304934224
+    },
+    {
+      "nome": "layer-00022-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259148132933919
+    },
+    {
+      "nome": "layer-00022-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259151035939066
+    },
+    {
+      "nome": "layer-00022-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259152761942123
+    },
+    {
+      "nome": "layer-00022-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259158608952465
+    },
+    {
+      "nome": "layer-00023-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259163728961501
+    },
+    {
+      "nome": "layer-00023-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259161723957965
+    },
+    {
+      "nome": "layer-00023-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259169778972153
+    },
+    {
+      "nome": "layer-00023-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259169626971886
+    },
+    {
+      "nome": "layer-00024-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259170603973604
+    },
+    {
+      "nome": "layer-00024-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259172654977208
+    },
+    {
+      "nome": "layer-00024-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259179045988421
+    },
+    {
+      "nome": "layer-00024-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259186601001639
+    },
+    {
+      "nome": "layer-00025-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259185659999995
+    },
+    {
+      "nome": "layer-00025-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259186667001755
+    },
+    {
+      "nome": "layer-00025-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259187175002642
+    },
+    {
+      "nome": "layer-00025-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259193624013892
+    },
+    {
+      "nome": "layer-00026-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259199495024110
+    },
+    {
+      "nome": "layer-00026-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259205078033805
+    },
+    {
+      "nome": "layer-00026-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259202046028542
+    },
+    {
+      "nome": "layer-00026-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259205215034043
+    },
+    {
+      "nome": "layer-00027-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259206475036228
+    },
+    {
+      "nome": "layer-00027-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259214821050676
+    },
+    {
+      "nome": "layer-00027-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259216424053445
+    },
+    {
+      "nome": "layer-00027-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259219048057976
+    },
+    {
+      "nome": "layer-00028-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259222133063297
+    },
+    {
+      "nome": "layer-00028-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259225109068424
+    },
+    {
+      "nome": "layer-00028-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259226170070250
+    },
+    {
+      "nome": "layer-00028-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259230680078007
+    },
+    {
+      "nome": "layer-00029-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259236340087723
+    },
+    {
+      "nome": "layer-00029-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259237882090367
+    },
+    {
+      "nome": "layer-00029-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259238614091621
+    },
+    {
+      "nome": "layer-00029-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259244403101530
+    },
+    {
+      "nome": "layer-00030-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259244371101475
+    },
+    {
+      "nome": "layer-00030-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259246606105296
+    },
+    {
+      "nome": "layer-00030-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259256132121545
+    },
+    {
+      "nome": "layer-00030-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259256717122541
+    },
+    {
+      "nome": "layer-00031-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259256870122802
+    },
+    {
+      "nome": "layer-00031-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259256424122042
+    },
+    {
+      "nome": "layer-00031-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259267916141571
+    },
+    {
+      "nome": "layer-00031-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259271947148403
+    },
+    {
+      "nome": "layer-00032-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259270219145476
+    },
+    {
+      "nome": "layer-00032-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259271952148412
+    },
+    {
+      "nome": "layer-00032-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259275937155157
+    },
+    {
+      "nome": "layer-00032-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259280965163654
+    },
+    {
+      "nome": "layer-00033-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259283618168132
+    },
+    {
+      "nome": "layer-00033-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259293301184442
+    },
+    {
+      "nome": "layer-00033-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259286315172680
+    },
+    {
+      "nome": "layer-00033-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259293273184395
+    },
+    {
+      "nome": "layer-00034-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259294495186449
+    },
+    {
+      "nome": "layer-00034-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259294835187021
+    },
+    {
+      "nome": "layer-00034-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259303476201525
+    },
+    {
+      "nome": "layer-00034-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259309024210816
+    },
+    {
+      "nome": "layer-00035-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259309940212348
+    },
+    {
+      "nome": "layer-00035-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259310311212969
+    },
+    {
+      "nome": "layer-00035-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259310422213154
+    },
+    {
+      "nome": "layer-00035-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259315673221929
+    },
+    {
+      "nome": "layer-00036-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259324606236823
+    },
+    {
+      "nome": "layer-00036-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259328265242912
+    },
+    {
+      "nome": "layer-00036-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259325817238839
+    },
+    {
+      "nome": "layer-00036-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259326020239177
+    },
+    {
+      "nome": "layer-00037-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259332167249397
+    },
+    {
+      "nome": "layer-00037-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259341043264121
+    },
+    {
+      "nome": "layer-00037-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259340505263230
+    },
+    {
+      "nome": "layer-00037-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259340306262900
+    },
+    {
+      "nome": "layer-00038-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259341921265575
+    },
+    {
+      "nome": "layer-00038-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259348340276196
+    },
+    {
+      "nome": "layer-00038-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259357156290749
+    },
+    {
+      "nome": "layer-00038-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259356051288927
+    },
+    {
+      "nome": "layer-00039-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259356774290119
+    },
+    {
+      "nome": "layer-00039-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259357394291142
+    },
+    {
+      "nome": "layer-00039-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259363540301264
+    },
+    {
+      "nome": "layer-00039-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259369523311101
+    },
+    {
+      "nome": "layer-00040-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259374494319261
+    },
+    {
+      "nome": "layer-00040-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259373618317824
+    },
+    {
+      "nome": "layer-00040-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259374419319138
+    },
+    {
+      "nome": "layer-00040-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259376552322636
+    },
+    {
+      "nome": "layer-00041-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259384714336001
+    },
+    {
+      "nome": "layer-00041-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259385894337930
+    },
+    {
+      "nome": "layer-00041-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259389921344511
+    },
+    {
+      "nome": "layer-00041-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259389503343828
+    },
+    {
+      "nome": "layer-00042-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259394714352334
+    },
+    {
+      "nome": "layer-00042-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259397241356454
+    },
+    {
+      "nome": "layer-00042-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259403506366656
+    },
+    {
+      "nome": "layer-00042-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259401864363984
+    },
+    {
+      "nome": "layer-00043-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259405733370278
+    },
+    {
+      "nome": "layer-00043-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259408524374815
+    },
+    {
+      "nome": "layer-00043-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259416949388485
+    },
+    {
+      "nome": "layer-00043-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259413500382890
+    },
+    {
+      "nome": "layer-00044-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259419674392900
+    },
+    {
+      "nome": "layer-00044-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259420814394746
+    },
+    {
+      "nome": "layer-00044-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259425063401623
+    },
+    {
+      "nome": "layer-00044-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259427765405992
+    },
+    {
+      "nome": "layer-00045-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259430135409822
+    },
+    {
+      "nome": "layer-00045-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259435867419076
+    },
+    {
+      "nome": "layer-00045-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259435004417684
+    },
+    {
+      "nome": "layer-00045-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259438986424105
+    },
+    {
+      "nome": "layer-00046-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259443996432175
+    },
+    {
+      "nome": "layer-00046-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259448234438994
+    },
+    {
+      "nome": "layer-00046-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259448241439005
+    },
+    {
+      "nome": "layer-00046-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259449539441092
+    },
+    {
+      "nome": "layer-00047-experts-0000-0127.safetensors",
+      "byte": 354099744,
+      "mtime_ns": 1788259451897444881
+    },
+    {
+      "nome": "layer-00047-experts-0128-0255.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259465102466060
+    },
+    {
+      "nome": "layer-00047-experts-0256-0383.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259465457466629
+    },
+    {
+      "nome": "layer-00047-experts-0384-0511.safetensors",
+      "byte": 354101064,
+      "mtime_ns": 1788259477036485144
+    },
+    {
+      "nome": "model-bf16-00001.safetensors",
+      "byte": 1273114461,
+      "mtime_ns": 1788259474640481317
+    },
+    {
+      "nome": "model-bf16-00010.safetensors",
+      "byte": 323564201,
+      "mtime_ns": 1788259487139501258
+    },
+    {
+      "nome": "model-bf16-00011.safetensors",
+      "byte": 10727387912,
+      "mtime_ns": 1788259763378929158
+    },
+    {
+      "nome": "model-bf16-00012.safetensors",
+      "byte": 3683689888,
+      "mtime_ns": 1788259620968711333
+    },
+    {
+      "nome": "model-plefp8-00000.safetensors",
+      "byte": 5200027199,
+      "mtime_ns": 1788259652094759392
+    },
+    {
+      "nome": "model-plefp8-00001.safetensors",
+      "byte": 5200027202,
+      "mtime_ns": 1788259653351761327
+    },
+    {
+      "nome": "model-plefp8-00002.safetensors",
+      "byte": 5200027198,
+      "mtime_ns": 1788259800631985349
+    },
+    {
+      "nome": "model-plefp8-00003.safetensors",
+      "byte": 5200027189,
+      "mtime_ns": 1788259823395019543
+    },
+    {
+      "nome": "model-plefp8-00004.safetensors",
+      "byte": 5200027190,
+      "mtime_ns": 1788259832080032563
+    },
+    {
+      "nome": "model-plefp8-00005.safetensors",
+      "byte": 5200027190,
+      "mtime_ns": 1788259905876142628
+    },
+    {
+      "nome": "model-plefp8-00006.safetensors",
+      "byte": 5200027190,
+      "mtime_ns": 1788259989499266260
+    },
+    {
+      "nome": "model-plefp8-00007.safetensors",
+      "byte": 5200027190,
+      "mtime_ns": 1788260010335296904
+    },
+    {
+      "nome": "model-plefp8-00008.safetensors",
+      "byte": 5200027190,
+      "mtime_ns": 1788260012752300455
+    },
+    {
+      "nome": "model-plefp8-00009.safetensors",
+      "byte": 4400023163,
+      "mtime_ns": 1788260017299307134
+    }
+  ],
+  "hashk": {
+    "path": "/srv/cix/modelli/hashk/ple_hashk_R4.pt",
+    "byte": 12800881066,
+    "mtime_ns": 1788366941705442682
+  }
+}
+
+{
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/README.md": "015fa9cf8f8b898f2271dcbffa2cb362267d07a9ccbd3222f712a77f60dd08ce",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/driver_inspect.py": "92740833140ffbe5577188a44ba9a5e77ac128819d71700c2ee7e5d6dd6852e1",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/identita-checkpoint.json": "b0de67f77bfd6fdda6a3cc7400a112a167ce3e41a0dc759c49db935c2546e635",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/prerequisiti.py": "36761b2644fbce820ace04bb7b7ae52a4037764b404b6219cb1a991889833061",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/identita_campioni.py": "988996cb354a27f3218735f5419050523a0601628905020605d9485ed904ae44",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/estrai_inspect.py": "7812a31ba11fcdd71876a72d7a0752577b428ecd710fad4b88021f2f03a38e1d",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/verifica_richieste.py": "92fcc5fe1f0a058dba21271165cd7dffb0b2f20cd6fefd82015fe7276a7fdf82",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/analizza_sglang128.py": "b4c784559e8a7212a4270f251aa969418f3378406127599d3fe364e438a3f7c1",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/analisi_multiturn.py": "40ca48f376138e2b6d60e22de74d2cad555d8c2a2bbe1bf03cd248753674fc3a",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/verifica_wire.py": "fb9a6fea0d930cd3ea60f6849e3228b1470079678fc84c3be97226042fe9a4f2",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/verifica-wire.txt": "5a30780f8290cf9b9b6938e863744016a74050e77c6f117c63eeb591d99b4eee",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/generate-singleturn.json": "0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/generate-multiturn.json": "56225e8a3e32f51379608887bc41a1840bb61b4c1ff98a5fac4ccc2781c0999f",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/ricetta-sglang.sh": "e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/test_driver_sglang128.py": "1796bbed7bea171d4b85c54b345a970b1e767d0e787c8dd539f66b585adf08fc",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/test_analizza_sglang128.py": "9a0a234f9e975b1fc526a9bc2e9e90259c4919a1925c007a5658eb123e20b5ff",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/test_identita_campioni.py": "5f2fd41ee49c5b15c8cdf2ff69992c0be05be5a981c4be24c61a881318b10d87",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/test_verifica_richieste.py": "43cd174c1b648b758115c3332095633566c07541c8d06aa937022e53069255f0",
+ "/home/cix/cix/benchmark/risultati/2026-09-16-flashnext-inspect-sglang128/test_estrai_inspect.py": "2e68a84e5a0fa674e91460eb5fcff03b7e307a8f58c9828c996de05d513405a6",
+ "/home/cix/cix/Agents/cix-benchmarks/run.sh": "ca9df5957d649310960eaaad76fcd2d785647ee038bc1071919736d6d21efc13",
+ "/home/cix/cix/benchmark/harness/versioni.sh": "bd0b88de142a91d50a3a0d27b6c0ab3e48e1fa5f4b2c23c070de6d866b1ede71",
+ "/home/cix/cix/benchmark/harness/monitor_mem.py": "541877b793594497abcfff53f74baa533d2da2b2a8d55748be849d930c555ff8",
+ "/home/cix/cix/benchmark/harness/concorrenza.py": "1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d",
+ "/home/cix/cix/benchmark/harness/latenza.py": "9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/ricetta-sglang.sh": "e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/driver_b6.py": "6e5842dce04fea7f78637bb7aedc02d4e5988d8fa8f24848e242af3de383fa34",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/misura_b6.py": "c31f4855dd8d6eed407ab86fb6e3f1cd6560d61483a3e3c91f20131c7260a929",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/monitor_b6.py": "b05a22bd7162fd1f848eb8387aa4af833f4902e79721beea297fc4da377d08d4",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/identita.json": "3a6e4158232ef55aa769c3756edd73a15495e92ff4c1e8551bc3f2a3b47262f3",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-b6-track128/manifesto.json": "8069eaeaa0a5829a03c37097194b7af99994f1ac01e1cae080cf086d7d094f7a",
+ "/home/cix/cix/benchmark/risultati/2026-09-04-flashnext-sglang/watchdog-memoria-w3.py": "cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765",
+ "/home/cix/Desktop/benchmark/terze-parti/patches-cix/qwen4_exp_nvfp4.py": "d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231",
+ "/home/cix/Desktop/benchmark/terze-parti/flashnext-one-spark/patches/flash_fwd.py": "fb6bcbeb1694dcf860f8436d4b49c20ce197f6787b94a448597a4dd78d70e4f9",
+ "/home/cix/Desktop/benchmark/terze-parti/flashnext-one-spark/patches/qwen_sparse_attn_backend.py": "75e962ec8e52061f21da1f311fb0e93050c8f4cf2370fa0e8197c078facadf53",
+ "/home/cix/Desktop/benchmark/terze-parti/flashnext-one-spark/patches/sparse_attn.py": "fb03ec4b64f201ba22c497b7dfdeaa5c4f9951c4e8b9f901e038ab9cf3c79721",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/generate-singleturn.json": "0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/generate-multiturn.json": "56225e8a3e32f51379608887bc41a1840bb61b4c1ff98a5fac4ccc2781c0999f",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/generate.json": "0625844e009ddcdba76d9d278deca76a63bc078ca591aab4f8869d5f1d4bb698",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/generate.json": "56225e8a3e32f51379608887bc41a1840bb61b4c1ff98a5fac4ccc2781c0999f",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/prerequisiti-run.txt": "de1984b10db6918c76d21c6c71ebdf88362dd43d29aa06fa11dbed6300659ddc",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/prerequisiti-run.txt": "f4afe187ba12306d41d57044683a164cd9f67e853c7de124f7c38579bc908c0b",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/flashnext/bfcl/2026-09-09T22-35-29-00-00_bfcl_C2J3sNQ3ZGLVBUGLcfWoNa.eval": "98fb80b992eab6d3fab1e9049032481e7cf32a24452997d35312b468244b7c9b",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/flashnext/ifeval/2026-09-09T22-46-45-00-00_ifeval_hdKjTnxMQNYX9gBeEds2Pf.eval": "23dfbaa4160d5da2b0e7134dfefc71dc5127046f787c3f4d3a0d9df61df06b2e",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/27b-k1/bfcl/2026-09-09T23-28-59-00-00_bfcl_kaS5uaF5pgCAEjLKA2thoo.eval": "0314be28c444361bc37fcbf9394550714c5896ab88a9006beeab45780ab6a399",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect/logs/27b-k1/ifeval/2026-09-09T23-39-27-00-00_ifeval_9qopxnQ73HF943LJrv5SMC.eval": "e494f3592a03c9232a0d353b8462fea4376d1b78b8976d26ebb9aca94900493e",
+ "/home/cix/cix/benchmark/risultati/2026-09-10-inspect-multiturn/logs/flashnext/bfcl/2026-09-10T08-48-48-00-00_bfcl_eXeSzpmKXj9uJKvkPK8CU9.eval": "6c51880547b754aef59929d4eb846c18c12fed76b526027ad04ec5146064bc36",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/logs/bfcl/2026-09-15T12-03-33-00-00_bfcl_6wAp7jzmgCzbnhGvjziy5c.eval": "b49ab299f9b339d6318048de0f68e5950fba251bc61fd8bf4993a6f867840a29",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/logs/ifeval/2026-09-15T12-12-50-00-00_ifeval_P3w6f36Q283PDQFaPHcGmY.eval": "9c7ae148c3595a1905ce65417e404328940b28f69978d8a944b732827d27fd95",
+ "/home/cix/cix/benchmark/risultati/2026-09-15-flashnext-inspect-tcnone/logs/multiturn/2026-09-15T12-38-45-00-00_bfcl_3LSJ4nY79zc5cAFniwwnFt.eval": "73068164e6872b964b065524c65bd3dde62e88c83520c9a5e590ae7553ce650b",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4/config.json": "e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4/model.safetensors.index.json": "da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4/tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4/tokenizer_config.json": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+ "/srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4/generation_config.json": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+}

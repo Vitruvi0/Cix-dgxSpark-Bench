@@ -1,0 +1,7 @@
+2026-09-02T10:52:41+02:00
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+nvcr.io/nvidia/vllm@sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56
+vllm 0.27.1+93523f72.dev | torch 2.14.0a0+4fdf77b940.nv26.08 (dal banner del container, vedi server-*.log)
+modello: /srv/cix/modelli/Qwen3.8-27B-NVFP4 (unsloth/Qwen3.8-27B-NVFP4, 22 GiB, pull 01-02/09 notte); flag base --gpu-memory-utilization 0.85; prefix caching off (default container)

@@ -1,0 +1,9 @@
+run,livello,esito,errore,prompt_tokens,completion_tokens,conteggio,ttft_ms,tok_s,finish_reason,t_invio,t_fine
+faeadac5,8,ok,,63,256,usage,648.9,21.6,length,2683.722438021,2696.174242926
+faeadac5,8,ok,,70,44,usage,508.7,14.69,stop,2683.722491589,2687.159100055
+faeadac5,8,ok,,67,62,usage,648.0,14.13,stop,2683.722583957,2688.686601918
+faeadac5,8,ok,,65,36,usage,648.5,15.24,stop,2683.722618789,2686.667270534
+faeadac5,8,ok,,62,80,usage,649.0,16.51,stop,2683.722652837,2689.157934306
+faeadac5,8,ok,,67,256,usage,649.3,21.25,length,2683.722740293,2696.374525901
+faeadac5,8,ok,,74,101,usage,647.6,15.31,stop,2683.722796341,2690.900382727
+faeadac5,8,ok,,73,47,usage,647.9,13.49,stop,2683.722972277,2687.780682258

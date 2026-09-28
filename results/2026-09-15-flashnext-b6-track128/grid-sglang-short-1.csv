@@ -1,0 +1,2 @@
+prompt_tokens,completion_tokens,ttft_ms,prefill_tok_s,decode_tok_s,tok_s_wall,itl_ms_media,itl_ms_p50,itl_ms_p95,n_chunk,finish_reason,indice_prompt,esito,run,classe,fase,punto,rip,warmup,timestamp
+126,62,328.0,384.1,32.5,28.12,30.8,62.3,64.9,32,stop,0,ok,bb6e30c1fda07d41e4f02bb557969eac,corto,sglang,corto,1,False,2026-09-15T12:36:33+0200

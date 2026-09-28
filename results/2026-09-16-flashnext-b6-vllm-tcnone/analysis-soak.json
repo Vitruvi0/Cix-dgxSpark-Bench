@@ -1,0 +1,42 @@
+{
+  "fase": "tcnone-soak",
+  "verdetto": "NESSUNA SEGNALAZIONE IN 1576 RIGHE",
+  "condizioni": [],
+  "descrittivi": {
+    "iterazioni": 197,
+    "righe": 1576,
+    "fallite": 0,
+    "segnalate_driver": 0,
+    "segnalate_offline": 0,
+    "copertura_s": 2704.0,
+    "tok_s_aggregati": {
+      "mediana": 80.26085062514257,
+      "q1": 76.80288729896427,
+      "q3": 86.53073459664381,
+      "min": 58.83878135906164,
+      "max": 103.01357681048846,
+      "n": 197
+    },
+    "ttft_ms_p95": {
+      "mediana": 628.1,
+      "q1": 623.7,
+      "q3": 635.7,
+      "min": 609.2,
+      "max": 961.4,
+      "n": 197
+    },
+    "mediane_terzi_tok_s": [
+      79.20677764443218,
+      81.8581833806559,
+      80.85149854170933
+    ],
+    "deriva_primo_ultimo_pct": 2.0764901012139125,
+    "monitor": {
+      "usata_gib_max": 115.11,
+      "swap_usato_gib_max": 4.76,
+      "pswpout_delta": 0,
+      "gpu_temp_c_max": 70.0,
+      "gap_max_s": 2.0581870079040527
+    }
+  }
+}

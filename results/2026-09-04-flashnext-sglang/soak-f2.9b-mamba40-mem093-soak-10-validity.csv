@@ -1,0 +1,9 @@
+classe,livello,run,completion_tokens,finish_reason,valido,problemi
+,8,6a9bd27e,54,stop,si,
+,8,6a9bd27e,87,stop,si,
+,8,6a9bd27e,41,stop,si,
+,8,6a9bd27e,256,length,si,
+,8,6a9bd27e,77,stop,si,
+,8,6a9bd27e,79,stop,si,
+,8,6a9bd27e,256,length,si,
+,8,6a9bd27e,256,length,si,

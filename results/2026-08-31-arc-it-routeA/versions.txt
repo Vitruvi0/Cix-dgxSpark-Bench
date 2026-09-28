@@ -1,0 +1,5 @@
+data: 2026-08-31T19:42:27+02:00
+strada: A - ds4-server patchato (echo+logprobs, branch echo-logprobs su clone locale)
+ds4 base: c1d4597 + patch
+lm-eval: 0.4.13.dev0 (fix text_offset byte in gguf.py)
+task: arc_it 0-shot limit 50 seed 1234

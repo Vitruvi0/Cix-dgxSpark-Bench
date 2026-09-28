@@ -1,0 +1,5 @@
+run,modello,livello,richieste,fallite,tok_s_aggregati,tok_s_mediana_per_richiesta,ttft_ms_p95
+1e37d1e4,flashnext,1,1,0,26.879188104762875,28.38,227.9
+1e37d1e4,flashnext,2,2,0,45.110064042347,26.905,293.9
+1e37d1e4,flashnext,4,4,0,41.73825124105725,21.375,372.9
+1e37d1e4,flashnext,8,8,0,87.01774290125572,17.655,507.2

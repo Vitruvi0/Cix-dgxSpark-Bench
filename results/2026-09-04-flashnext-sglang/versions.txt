@@ -1,0 +1,2045 @@
+generato: 2026-09-02T18:54:18+02:00 da versioni.sh
+Linux spark 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         113           0           3         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 30fcd402e0a0a830199436730799c51e75571eb8 branch bench-flash-next
+driver: 02a14d720de5cfc5ea5452f8bdddc475ae132b18173b1a01305adc243e4bd657  ./driver-concorrenza.sh
+driver: a3890b88a6b5ec00cd87c2ec449126a61eff8dcd449570232b0414e0fe108b65  ./driver-qualita.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+harness: 5a354fbb1003485d12bbca4dbcd78fd9a79569951339fdc5604d2f418dd3ebd5  latenza.py
+harness: b31f39d94a031a092ba93c19752f92eba118d86616a4d86d07baf128d2a9c7e7  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+hashk: 2dc72e44d65e95e3bf5a196c773c0fda2cd874afb4c154d939e33e9ee0a05a4c  /srv/cix/modelli/hashk/ple_hashk_R4.pt 12800881066 byte (build 18:29-18:35, 355 s, riappeso dopo la rigenerazione del 18:54)
+=== generato: 2026-09-08T13:30:46+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         107           0          10         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: c414d1324f0959eb694b3ac50898896838fbbfa0 branch bench-w2-controlli
+driver: 03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+f8d14b1a91d3adbb7bcfd92885c9b60ccdce0bf8
+abac2bbad4aae66abc15fdc43d31b73040d3ad823a00f96c3e3e63acf000b5d0  fasi-f2-w3-notte1.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+d5f83a148bb281d0ee7287d6423fc0ee6c8f7cf053e81e59e68fd8a755b86cee  /home/cix/cix-worktrees/f2-w3/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-08T15:06:27+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         109           0           7         115
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 7c1d4cdb55c66e2ce8028d7e008c06e1879c4787 branch bench-w2-controlli
+driver: 03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+0784e0cf961248ced099127f71dbd2e16635ca1c
+daf5af77d099292411a8c732ab65db76717ec58dee124e4c72be14cceed14d3b  fasi-f2-w3-validazione.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+d5f83a148bb281d0ee7287d6423fc0ee6c8f7cf053e81e59e68fd8a755b86cee  /home/cix/cix-worktrees/f2-w3/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-08T15:21:42+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         112           0           5         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 7c1d4cdb55c66e2ce8028d7e008c06e1879c4787 branch bench-w2-controlli
+driver: 03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+f7448b95987044b9766efc02e15386a2e70442ae
+289a3abffe66133a9c8d771f5ea4dfd109086b1c9b2141aa3dada6a343438998  fasi-f2-w3-notte2-ridotta.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+d5f83a148bb281d0ee7287d6423fc0ee6c8f7cf053e81e59e68fd8a755b86cee  /home/cix/cix-worktrees/f2-w3/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-08T15:51:00+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         116           0           1         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 4694e513881f295dd510fbe42522ac041a051c2b branch bench-w2-controlli
+driver: 03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+e6f71ebb2e2d5edaef814b23c88ed5c167102d83
+fda6ee12b3382f352e70fffa24e1193920c30ffa0571c9bc629dda6e84189e81  fasi-f2-w3-notte2-ridotta2.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+03de6631f29dd3a29af9e5b1511743c985a7860c8c14fce6986fec0ee46115a0  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+d5f83a148bb281d0ee7287d6423fc0ee6c8f7cf053e81e59e68fd8a755b86cee  /home/cix/cix-worktrees/f2-w3/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-09T17:59:01+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           8          88           0          26         113
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 5246bf532aab1a20e5af4c25fb0314affdf14a5d branch master
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+5246bf532aab1a20e5af4c25fb0314affdf14a5d
+c2509607da28ac7c065b0ce83b3e81bacc9a62268066d77b5882d64a436cca07  fasi-f2-w3-kvbf16-qualita.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-09T20:27:32+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         116           0           2         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 70ae168c4d594e968cc98e4d1b71cc812d9d75cc branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+70ae168c4d594e968cc98e4d1b71cc812d9d75cc
+c2509607da28ac7c065b0ce83b3e81bacc9a62268066d77b5882d64a436cca07  fasi-f2-w3-kvbf16-qualita.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T12:52:14+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4          99           0          18         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: f30b92256b276a3b4b3fcdfae0b75d0515fe0aa6 branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+f30b92256b276a3b4b3fcdfae0b75d0515fe0aa6
+e50cc143636ba4689d8d05d98a772a9f35baf249aabd784fc6ced9b5e2de88be  fasi-f2-w4-prestazioni.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=360; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T13:20:03+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         112           0           6         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: dc2f7606410c109b462179f8abb504fb8642a2e2 branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 60d72554e7524171805c7691cda5c00765bde8dc18e1a8834d39da2e869fc96e  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+dc2f7606410c109b462179f8abb504fb8642a2e2
+108717ae7aced9a9facd693fba0e0319b54fb8503f3b48682494256c6e3bba1f  fasi-f2-w4-prestazioni-2.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=300; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T13:29:12+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         110           0           8         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: dcd3a8416f8ac1d4a6806f05404e94739d1b0ed8 branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 60d72554e7524171805c7691cda5c00765bde8dc18e1a8834d39da2e869fc96e  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+dcd3a8416f8ac1d4a6806f05404e94739d1b0ed8
+fc68f6d53b45ae470349cdc03c29700d227e6e97abff03def3adeb0b4d8f3542  fasi-f2-w4-prestazioni-3.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=240; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T13:47:02+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         116           0           2         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 4aec6f0508186e1ea5616a826689da2f8ac72f61 branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+4aec6f0508186e1ea5616a826689da2f8ac72f61
+190f6e94ac8a4a9edf7122ce36279fea0d4584d176d9831dba37e6beb511fb58  fasi-f2-w4-prestazioni-4.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=180; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T14:01:18+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         116           0           2         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 48b7e3264cd7a9d3da707112006ae8373924f2f6 branch bench-w2-chiusura
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 2cbed4cdd7b0c21aced97e15829c29c1ac2fe0598725f87fa327695db8a9e31b  ./registro-w4.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+48b7e3264cd7a9d3da707112006ae8373924f2f6
+71d1180eb07d2ea1db7e259b52a43b81ac7f7e47471540a44967eee766f5b518  fasi-f2-w4-prestazioni-5.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T18:25:19+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         106           0          11         115
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 858e476b25fe028a803fa6b744eea0799c757a69 branch bench-notte-1009
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 03a3fe2d15688e39f78b51dfc6182b4fa1e436430680284ff00735ba552207cf  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+858e476b25fe028a803fa6b744eea0799c757a69
+d685ebd2159cbf3b5689c0c6a258b35ea5561b4f59ad4c75dcbdc5a5ea51872c  fasi-f2-w4-qualita.txt
+4898be907a6142d2cc99e5123f9da01d967e6aa6e805a9d80fcafd9e4415cc35  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=300; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T20:51:23+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         116           0           2         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 853841d70cc5d81d160742e45d8ead47cc53f335 branch bench-notte-1009
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: 94efd172a642b37c0b745feca3e0d570bb9af4232d85a733d3e2f7426402fc79  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: b8c27f307ffd84153e077176e58bf03aec1bd26b371ed31fc95b59558a465652  ./registro-qualita.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 614c1ba53196d24de040b1dbb1a2634685f1e60062457dc3d9af2c0631b26830  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+853841d70cc5d81d160742e45d8ead47cc53f335
+9cb6762e0be93a1e019f049ddbf3a04fe989ed28895345c22f1c4dc0cf2174ca  fasi-f2-w4-soak.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+94efd172a642b37c0b745feca3e0d570bb9af4232d85a733d3e2f7426402fc79  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=120; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-10T21:13:17+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           5         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: e33ef51b7c18cc344c61347a18346ac51110a6aa branch bench-notte-1009
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: b6c9554ea4f7b5334de1a8d0ac46f7d04ecbaa6b0b0884c33859b7f8ca530653  ./registro-qualita.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+
+=== F2 W3 checkout effettivo ===
+e33ef51b7c18cc344c61347a18346ac51110a6aa
+f71165adce9c6cdc47bffbbcd871bc13af8d987e569c7a555a53ce530aca66c4  fasi-f2-w4-soak-2.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=240; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T10:31:16+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         109           0           8         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: d8b097d8c4cea588d8e0ae8ba34f7fcff30f4ae8 branch bench-notte-1009
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: b6c9554ea4f7b5334de1a8d0ac46f7d04ecbaa6b0b0884c33859b7f8ca530653  ./registro-qualita.py
+driver: 091ac1a636711466b0c4a8865e5bcd531d82967b43cf602588a4ac0931e06b95  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+d8b097d8c4cea588d8e0ae8ba34f7fcff30f4ae8
+a561005cf5241266ca2f4187cfc34c980e73f73a0dddb8301c7bdee4a4eeab0b  fasi-f2-w4-soak-3.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T11:34:08+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         111           0           6         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: df980684b6824b173007910333fbee9db1ddd7df branch bench-notte-1009
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: 6d33b6047d71bfe4afb6981184254fb4a279983ebb13cc30cf43955095efe691  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+df980684b6824b173007910333fbee9db1ddd7df
+e00131d0d55c4de1fc1729f5b1bd901bc5ad2584c70430637adb9d340507fc81  fasi-f2-w4-soak-4.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T12:47:47+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           5         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 89b9c789887e2b0cdd4f2a62a5574169336788e7 branch bench-w3-diagnosi
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: 615e77b0e0b4f31b24ffa4b84e1ffa0b88018501dddd8cf4e4022d41d96c5f0d  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+89b9c789887e2b0cdd4f2a62a5574169336788e7
+126d59ca48ec185f720b43a370004c51a5eb7c94076702b833aa15aa174d7501  fasi-f2-w4-soak-5.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T15:42:01+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         113           0           5         116
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: f9c628b85ab64bfd86ca0ca35af967f545b46f0c branch bench-w3-diagnosi-2
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: 39c54c4fa462d33f2c644897471f50c5c96fb1f7f6d2a5ba308f1addbb7d1216  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+f9c628b85ab64bfd86ca0ca35af967f545b46f0c
+0f2587416d6f628c53c4a23bff0b760d1e7d883cd4b62ffa264ff3fdf1e774ed  fasi-f2-w4-soak-6.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T18:06:38+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           4         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 111a969536fe2dc6c30facfca3e151c61e59f3ff branch bench-w3-diagnosi-3
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: cf393bd5328a1741002222170b9271f45cb316755d37f6d5fb3d30ecbb795099  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 08b321f5d467738ab454160c646c33109df7bf36194c033a1543db9135b643c6  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+111a969536fe2dc6c30facfca3e151c61e59f3ff
+fab882f38b636f655fd9719908b94e635483a5ae1b629fae1edddbb3174b8a2e  fasi-f2-w4-soak-7.txt
+925e9045919e1a7f638957daa5a30435ced9675ec895183a34cd90f9d022af85  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T20:22:20+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         111           0           6         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 7dbb02e3c4f549a2c600285cb12dc69f51a9fd25 branch bench-w3-diagnosi-4
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: a8d33e32d872b01ae00520de5ded801f03e6077c8883101074e216b3d1193c07  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 8bc1eaff0b37addd83ddfbe6a538ac5333894bd5f1f710d12cd425583ee13c6c  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+7dbb02e3c4f549a2c600285cb12dc69f51a9fd25
+d62b49ed92026307bcb15a96533cca60e97e43347e699d28671d6ea4aa6d686a  fasi-f2-w4-soak-8.txt
+b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-11T20:23:32+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           5         109           0           7         115
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 7dbb02e3c4f549a2c600285cb12dc69f51a9fd25 branch bench-w3-diagnosi-4
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 7057ce788d87268d276781a365020d45d31339d8201953f8c97781c7c3d4c53d  ./lancio-f2.12-nextn2-mamba40-track32-soak.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: a8d33e32d872b01ae00520de5ded801f03e6077c8883101074e216b3d1193c07  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 8bc1eaff0b37addd83ddfbe6a538ac5333894bd5f1f710d12cd425583ee13c6c  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+7dbb02e3c4f549a2c600285cb12dc69f51a9fd25
+6110a497119aee05d74a4913120df466283182fdd81ac3211525adc4422bafe8  fasi-f2-w4-soak-9.txt
+b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-12T10:51:01+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           5         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 8ce81aa9f613f7b10ea90d6e664c6c022d752f36 branch master
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684  ./lancio-f2.12-nextn2-mamba40-track128-soak.sh
+driver: 7057ce788d87268d276781a365020d45d31339d8201953f8c97781c7c3d4c53d  ./lancio-f2.12-nextn2-mamba40-track32-soak.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: a8d33e32d872b01ae00520de5ded801f03e6077c8883101074e216b3d1193c07  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 8bc1eaff0b37addd83ddfbe6a538ac5333894bd5f1f710d12cd425583ee13c6c  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+8ce81aa9f613f7b10ea90d6e664c6c022d752f36
+6110a497119aee05d74a4913120df466283182fdd81ac3211525adc4422bafe8  fasi-f2-w4-soak-9.txt
+b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-12T10:51:30+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         113           0           5         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 8ce81aa9f613f7b10ea90d6e664c6c022d752f36 branch master
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: 7057ce788d87268d276781a365020d45d31339d8201953f8c97781c7c3d4c53d  ./lancio-f2.12-nextn2-mamba40-track32-soak.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: a8d33e32d872b01ae00520de5ded801f03e6077c8883101074e216b3d1193c07  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 8bc1eaff0b37addd83ddfbe6a538ac5333894bd5f1f710d12cd425583ee13c6c  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: c3445bf9927f5162fe0a7f39a6fbecc1d4c4c06eb4988f83361dcdcf7ca000b4  validita.py
+
+=== F2 W3 checkout effettivo ===
+8ce81aa9f613f7b10ea90d6e664c6c022d752f36
+6110a497119aee05d74a4913120df466283182fdd81ac3211525adc4422bafe8  fasi-f2-w4-soak-9.txt
+b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-12T12:01:15+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         113           0           5         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: e877dfcc3be88f0e7eb599ecc46d9dd9664e0586 branch bench-w3-diagnosi-6
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684  ./lancio-f2.12-nextn2-mamba40-track128-soak.sh
+driver: 7057ce788d87268d276781a365020d45d31339d8201953f8c97781c7c3d4c53d  ./lancio-f2.12-nextn2-mamba40-track32-soak.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: dfed0d6e7a353831ce2ecb30bd65c42e8185680b622c8e9f5cebba9d98a27b59  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 24bea042ff38d615b5a5a69ec8e0b6e71be23808d3a66a05e9f75d7e7ec3fe5f  ./riproduttore-issue-sglang.py
+driver: bc0ff06aeec69a173f683f0583789fdafd72768373a334a58775539282039943  ./test_riproduttore_issue_sglang.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 9591eb18ab7b9b8597aa5e3832442fb186da9a19bfd69e0e3841c8d93e294127  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 669741f7d3c2b09d5608dba1ff1f1250db19a9c74662b95dd3a9f55df2ffd7bb  validita.py
+
+=== F2 W3 checkout effettivo ===
+e877dfcc3be88f0e7eb599ecc46d9dd9664e0586
+4cec1bc13c781cc76fe2e2cf8ccf239a7a89c2b15287fd41273b41ee8b46b311  fasi-f2-w4-soak-11.txt
+b04ffd4ab03f6be5effa7991566682f984c43538046e83070aed20fb83397eb8  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=150; CONC=4; TASKS=arc_it gsm8k
+=== generato: 2026-09-15T16:07:43+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           3         118           0           0         117
+immagine: lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1 -> lmsysorg/sglang@sha256:12d3392bdc8be8d35e9a95f191df6aef99c5114bdbefd41bfdc7e760e6d25ec1
+modello: /srv/cix/modelli/Qwen3.8-Flash-Next-NVFP4
+e765305daba0951974308f4d32c075b52a6a45974730d273f2216718a994d624  config.json
+da5ca9c3b65e48e151329e64e141c2fa700bf2f99aec53cc014e4b52a6ff7a84  model.safetensors.index.json
+206 shard, 135195303851 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX ad8920d4a795a1fabe47edad2d7f336d9cd2eb68 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: 63ad1cabb905666d1149078d029b62b67687476f branch bench-sglang128-inspect-1509
+driver: 05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  ./driver-concorrenza.sh
+driver: 23dbc2b65570c4405b7f70ed110aea513fd794598b9f95268f8d440aeabe015e  ./driver-f2-w3.sh
+driver: 2cf6d744fc6ca47bbd99968a7819856b06a721e0b279cf5f66dede9abba54878  ./driver-gsm8k-bis.sh
+driver: 06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  ./driver-qualita.sh
+driver: ca95633176c3611ce6c3dd410244d9e7672b329bdb6cda570372898bdca1be6d  ./driver-servizio-replica.sh
+driver: 174025ea524f76b0c9a32b315b72483a595af00650ff4c937977ca6cbdb0c189  ./driver-sglang.sh
+driver: cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  ./driver-soak.sh
+driver: 28fa1aa57f0869c385f311ef2d35c7c9f16d1a38c789dd101aff998c003dd2b6  ./lancia-f5-track128.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-f1-replica.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16.sh
+driver: 104ca48b7ba32acf806d81be8c124a7ae94e0bc47c70a26c6b18729e9e1af478  ./lancio-f2.10-kvbf16-w3.sh
+driver: 7a955a2586e4ebde3f909e380b852fc45353db1ba5a00ed0ccd3c5ca086994a7  ./lancio-f2.11-nextn2-chunk4k.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak2.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak3.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-soak.sh
+driver: 562de016241d3df058e9d47abfbb50987dae483e9939147790404917dbaef6cb  ./lancio-f2.12-nextn2-mamba40-mem093-w3.sh
+driver: e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684  ./lancio-f2.12-nextn2-mamba40-track128-soak2.sh
+driver: e681442c500dd99b07f55d3a0ee7a08331e9665ba39047153213f0defe5fc684  ./lancio-f2.12-nextn2-mamba40-track128-soak.sh
+driver: 7057ce788d87268d276781a365020d45d31339d8201953f8c97781c7c3d4c53d  ./lancio-f2.12-nextn2-mamba40-track32-soak.sh
+driver: 8a1f3c7ca6039bb159376a0534056c9a6422216462cbdb3788c3d11ff6595fb5  ./lancio-f2.12-nextn2-mamba48-mem093-soak.sh
+driver: 903b26b48f0c8505033e3cddde7b852ccfad1021166935a0cd27c51d96764f58  ./lancio-f2.1-nospec.sh
+driver: ce081ffae46de100306f732a6abefcb1e738736d174b9fa00fc79f404123dcdc  ./lancio-f2.2-nextn1.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2.sh
+driver: 82dfed2d157b454cf257b7eb202fe116332899440731276a9646bad2d992fea8  ./lancio-f2.3-nextn2-soak.sh
+driver: 6f92250909355dfd30865f26019afd8aed1b8ccf24215cdfd77c88dc1ec896bc  ./lancio-f2.5-nofp8.sh
+driver: 970405caeaaa89d434c3e283b386549f8cba694ecc09668107f17494e863be94  ./lancio-f2.5-nofp8-w3.sh
+driver: fc15960dedbda31157b45d4775a8c00dbeaafc9980bfdd874f44365bac51b715  ./lancio-f2.6-pleoff.sh
+driver: b22fcb6a0c2f7d7e7a3f91bcbcc89cfe2093c7c361e6efd60eec074a0c429027  ./lancio-f2.6-pleoff-w3.sh
+driver: 63a288b9e8b2f5348c6b31af9d781b2d4552d59fefa96c6ca04df734d0c06c33  ./lancio-f2.7-hashk-controllo.sh
+driver: 66fc63a5a3321f6de30fd968d8964d5dc73e16175d3bdce7d6ae08f884f28363  ./lancio-f2.8-chunk4k.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak-bis.sh
+driver: 753bba75427cfb48bb29b28634c9a5b802ef62076538833f785ce07ec8cf1700  ./lancio-f2.9b-mamba40-mem093-soak.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095.sh
+driver: 1b30b27211957f2d0fbaafc42d5a077b3f8ff9938f30e3e1b5ebb0c37e72d49a  ./lancio-f2.9b-mamba40-mem095-w3.sh
+driver: f0aeb2ead3de2eb72a27af055281421a28cad891b6a93ccdcd07db09baf5c0c7  ./lancio-f2.9-cache12-controllo.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak-bis.sh
+driver: acd728d84ee1f6343a608eb7ee63276907348d6f7e80302db63ec60b97aded4f  ./lancio-f2.9c-mamba40-mem093-nospec-soak.sh
+driver: 674bbdb39cb4740fad76f1b30c49ff7393ccff5e34029739327d008e177784f4  ./lancio-f2.9-mambav2.sh
+driver: 42cbf1c9d3e874a7bbccf285a65676e39579521147366b8987615451154e3f8e  ./lancio-hashk.sh
+driver: 6a0b74322bdd10ed6cfcba18196a05f3b352ec12337c28a48b2355ff321962a9  ./lancio-servizio-bis.sh
+driver: 0f81a821af9d8435c0c7e8e2e8c09668b10cbe5e613f8640f5f925d2b1fc19f5  ./lancio-servizio.sh
+driver: cc81a703160df85e404c503d575ccf1c71abd8cde13b2180f79c3501974cf2b8  ./verifica-flag-w3.sh
+driver: 7b994f091f2170f8bcb656e7a6f4df363fe5316bd9a147516c111cc19a25f122  ./analisi-degenerati.py
+driver: c32044ee8bdcb1b8a61c2a77f9ce9eb625df89e5fa2c00452cae30c06d128619  ./analisi-kvbf16-qualita.py
+driver: 6846a3d57e850253ea5e22f65c59efee8f8716cfba6398a99941118ea70266a6  ./analisi-notte1.py
+driver: 8ab486e6abc613cbbfefa63aae1aaf6e4ae36b8bcfe2db81bad91bbf2e5b3b0f  ./analisi-notte2.py
+driver: 39d82381eb35f64d03918b1a46e89cf0d1cbeaddb0ee184be60a742c6470ce7a  ./analisi-soak.py
+driver: baf075800b6479526ff31bb1807c9c95f73f74b22c0b3d2aae540e7f1239dd05  ./analisi-track128-qualita.py
+driver: 5d251127ea2f17bb0286d4bfde53d99660e25620251c4b30d0246ea817bf3759  ./analisi-w4.py
+driver: 802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  ./cap-server-w3.py
+driver: 6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  ./equivalenza.py
+driver: 9984488ddf325321b00b63520f84e9516c00aae32d07bc9cbd91e842eb62c73c  ./needle.py
+driver: e707d631f7dc92cc7342cd7f52cc0797316c19c2cb4644d7efe43feb84c20510  ./parser-check.py
+driver: cb006b77af9566fec47d85365fafcba5cc0ce37628de0a7a98d24b92ca721d80  ./registro-qualita.py
+driver: 299382a01bb429f8a7cea6ccf83fb7defefd271e9e9f2a980cc55fd1bbf264c3  ./registro-soak.py
+driver: 165cc6bf2bb8751d0641d7fe7c4f98e4e1b3faba115c91ff99e7246cbeb8fdb3  ./registro-w4.py
+driver: 24bea042ff38d615b5a5a69ec8e0b6e71be23808d3a66a05e9f75d7e7ec3fe5f  ./riproduttore-issue-sglang.py
+driver: bc0ff06aeec69a173f683f0583789fdafd72768373a334a58775539282039943  ./test_riproduttore_issue_sglang.py
+driver: 7227e688ad78e542b9372b37288fb152545657935d01ce6989502fe0510f3b62  ./test_soak.py
+driver: 494646600bcafb1fb0b1aa2d8125619c6f7bfa64f81c7fb4f1986dd4f2587865  ./test_w3.py
+driver: cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  ./watchdog-memoria-w3.py
+harness: 9ebc6d8636c17ab0e20c31e6b4a6810c0c44ba77f4eeeef1315b1066c00aff2f  latenza.py
+harness: 1bfce2324ada54955fd14c1194b920019b96846d7b61c6a49aeecc7ea43f851d  concorrenza.py
+harness: 669741f7d3c2b09d5608dba1ff1f1250db19a9c74662b95dd3a9f55df2ffd7bb  validita.py
+
+=== F2 W3 checkout effettivo ===
+63ad1cabb905666d1149078d029b62b67687476f
+542ab1effd4c1e7a7b24ac3e4c0a216c624c3ebdb166286c2963d658c188ad47  fasi-f2-w4-qualita-track128.txt
+23dbc2b65570c4405b7f70ed110aea513fd794598b9f95268f8d440aeabe015e  driver-f2-w3.sh
+802b15391ec7ec3e73f1746541095a552e3b14d6d30a4d7e1fbeb8ae015c6c40  cap-server-w3.py
+06f4c954540c055702380edcd5a48edd2c00e5b16577180d9d1cb5f0d4144c84  driver-qualita.sh
+05a0b2c1f84d0f30966d42e6c839547f6162b7f3e60328cf4deadda70dc93c63  driver-concorrenza.sh
+cff6f3a5d8ee2f94077af9239a3805c14accfe68466ec293f7b427b9d95d70f6  driver-soak.sh
+cdc4b34569bec11b3174e15767da9deb07a2e41b900b129257962e04a6b92765  watchdog-memoria-w3.py
+9db01993dabfdc36cb2f9a0ee9a9d4a72b8dfcaba33cccdb6351215312313236  /home/cix/cix/benchmark/harness/driver-lib.sh
+04a22b0f8dbb6e0d750cc952d4101c1f59fda04e50cfac1ffbd964f39fd6661e  corpora/codice.txt
+ACCETTA_SENZA_DROP=0; SCADENZA_MIN=540; CONC=4; TASKS=arc_it gsm8k

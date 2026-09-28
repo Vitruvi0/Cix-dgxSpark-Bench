@@ -1,0 +1,460 @@
+{
+ "cella": "2026-09-14-flashnext-vllm-head-f5",
+ "f5": {
+  "nodraft-f5": {
+   "esito": "passa",
+   "falliti": [],
+   "mancanti": [],
+   "controlli": {
+    "ARC-it acc_norm": {
+     "stato": "passa",
+     "testo": "56.3730 ±1.45 ≥ 53.5 (+2.8730 punti; n=1169)",
+     "margine": 2.872968349016247
+    },
+    "GSM8K strict": {
+     "stato": "passa",
+     "testo": "96.1334 ±0.53 ≥ 94.1 (+2.0334 punti; n=1319)",
+     "margine": 2.033434420015169
+    },
+    "needle 32k e 128k": {
+     "stato": "passa",
+     "testo": "9/9 e 9/9",
+     "margine": null
+    },
+    "equivalenza greedy 2 passate": {
+     "stato": "passa",
+     "testo": "identici 20/20",
+     "margine": null
+    }
+   },
+   "arc_it": {
+    "stato": "ok",
+    "valore": 56.37296834901625,
+    "stderr": 1.451081692192576,
+    "n": 1169,
+    "motivo": "",
+    "file": "lmeval-nodraft-f5/flashnext/results_2026-09-13T21-10-26.833997.json",
+    "extra": {
+     "acc,none": 54.91873396065012
+    },
+    "note": []
+   },
+   "gsm8k": {
+    "stato": "ok",
+    "valore": 96.13343442001516,
+    "stderr": 0.5310583162098064,
+    "n": 1319,
+    "motivo": "",
+    "file": "lmeval-nodraft-f5/flashnext/results_2026-09-13T21-56-49.518077.json",
+    "extra": {
+     "exact_match,flexible-extract": 96.28506444275968
+    },
+    "note": []
+   },
+   "needle": {
+    "32000": {
+     "stato": "ok",
+     "trovati": 9,
+     "righe": 9,
+     "motivo": ""
+    },
+    "128000": {
+     "stato": "ok",
+     "trovati": 9,
+     "righe": 9,
+     "motivo": ""
+    }
+   },
+   "equivalenza": [
+    20,
+    20
+   ]
+  },
+  "draftho-f5": {
+   "esito": "passa",
+   "falliti": [],
+   "mancanti": [],
+   "controlli": {
+    "ARC-it acc_norm": {
+     "stato": "passa",
+     "testo": "57.0573 ±1.45 ≥ 53.5 (+3.5573 punti; n=1169)",
+     "margine": 3.5573139435414873
+    },
+    "GSM8K strict": {
+     "stato": "passa",
+     "testo": "96.3609 ±0.52 ≥ 94.1 (+2.2609 punti; n=1319)",
+     "margine": 2.260879454131924
+    },
+    "needle 32k e 128k": {
+     "stato": "passa",
+     "testo": "9/9 e 9/9",
+     "margine": null
+    },
+    "equivalenza greedy 2 passate": {
+     "stato": "passa",
+     "testo": "identici 20/20",
+     "margine": null
+    }
+   },
+   "arc_it": {
+    "stato": "ok",
+    "valore": 57.05731394354149,
+    "stderr": 1.4483677397351096,
+    "n": 1169,
+    "motivo": "",
+    "file": "lmeval-draftho-f5/flashnext/results_2026-09-13T22-31-42.692670.json",
+    "extra": {
+     "acc,none": 54.66210436270317
+    },
+    "note": []
+   },
+   "gsm8k": {
+    "stato": "ok",
+    "valore": 96.36087945413192,
+    "stderr": 0.5158113489231186,
+    "n": 1319,
+    "motivo": "",
+    "file": "lmeval-draftho-f5/flashnext/results_2026-09-13T23-15-42.821368.json",
+    "extra": {
+     "exact_match,flexible-extract": 96.58832448824867
+    },
+    "note": []
+   },
+   "needle": {
+    "32000": {
+     "stato": "ok",
+     "trovati": 9,
+     "righe": 9,
+     "motivo": ""
+    },
+    "128000": {
+     "stato": "ok",
+     "trovati": 9,
+     "righe": 9,
+     "motivo": ""
+    }
+   },
+   "equivalenza": [
+    20,
+    20
+   ]
+  }
+ },
+ "secondaria": {
+  "copertura": {
+   "testo": {
+    "mchar": 7.53,
+    "mtoken": 1.9,
+    "id_distinti": 6896
+   },
+   "vocab": {
+    "blazux": {
+     "copertura": 78.821,
+     "id": 65536,
+     "fuori": 402329,
+     "distinti": 3047
+    },
+    "italiano-cella2": {
+     "copertura": 100.0,
+     "id": 65536,
+     "fuori": 7,
+     "distinti": 5
+    },
+    "italiano-heldout": {
+     "copertura": 95.048,
+     "id": 65536,
+     "fuori": 94078,
+     "distinti": 1074
+    }
+   }
+  },
+  "accettazione_heldout": 0.58075,
+  "accettazione_per_boot": {
+   "nodraft-f5": [
+    0.598888888888889,
+    9
+   ],
+   "draftho-f5": [
+    0.5705555555555555,
+    9
+   ],
+   "draftho-b2": [
+    0.5890909090909091,
+    11
+   ]
+  },
+  "accettazione_tutto_log": {
+   "nodraft-f5": [
+    2.7563636363636363,
+    330
+   ],
+   "draftho-f5": [
+    2.732532051282051,
+    312
+   ],
+   "draftho-b2": [
+    2.2604545454545453,
+    22
+   ]
+  },
+  "finestre_f7": {
+   "nodraft-f5": [
+    "2026-09-13T22:09:06+02:00",
+    "2026-09-13T22:10:35+02:00"
+   ],
+   "draftho-f5": [
+    "2026-09-13T23:27:46+02:00",
+    "2026-09-13T23:29:14+02:00"
+   ],
+   "draftho-b2": [
+    "2026-09-13T23:44:33+02:00",
+    "2026-09-13T23:46:15+02:00"
+   ]
+  },
+  "verdetto": "leva chiusa",
+  "motivo": "accettazione 0.58075 < 0.6: l'accettazione della cella 2 era contaminata dal corpus",
+  "gate_draftho": "passa",
+  "n8_heldout": {
+   "st": [
+    84.52058644667736,
+    79.8567990841778,
+    86.81803956312156
+   ],
+   "valide": 6,
+   "attese": 6,
+   "per_boot": [
+    [
+     "draftho-f5",
+     [
+      86.91786444668122,
+      84.7202362137967,
+      86.94434170255256
+     ],
+     3
+    ],
+    [
+     "draftho-b2",
+     [
+      78.96819611859966,
+      76.83218940109217,
+      82.74338051552111
+     ],
+     3
+    ]
+   ],
+   "rip": [
+    [
+     "draftho-f5 r1",
+     86.91786444668122,
+     "ok"
+    ],
+    [
+     "draftho-f5 r2",
+     86.9708189584239,
+     "ok"
+    ],
+    [
+     "draftho-f5 r3",
+     82.52260798091217,
+     "ok"
+    ],
+    [
+     "draftho-b2 r1",
+     74.69618268358468,
+     "ok"
+    ],
+    [
+     "draftho-b2 r2",
+     78.96819611859966,
+     "ok"
+    ],
+    [
+     "draftho-b2 r3",
+     86.51856491244256,
+     "ok"
+    ]
+   ],
+   "escluse": [],
+   "non_verificabili": [],
+   "problemi": []
+  },
+  "n8_heldout_stato": "completo",
+  "n8_nodraft_cella2_readme": [
+   78.86,
+   75.75,
+   80.12
+  ]
+ },
+ "f7_cumulativo": {
+  "st": [
+   79.63769312327521,
+   74.9788640457497,
+   80.53933886624574
+  ],
+  "valide": 9,
+  "attese": 9,
+  "per_boot": [
+   [
+    "nodraft-b1",
+    [
+     79.63769312327521,
+     77.30827858451246,
+     79.9593885558807
+    ],
+    3
+   ],
+   [
+    "nodraft-b2",
+    [
+     78.08339477756103,
+     75.2860942550696,
+     82.37934993998607
+    ],
+    3
+   ],
+   [
+    "nodraft-f5",
+    [
+     80.53933886624574,
+     76.89715792455979,
+     83.77854088375074
+    ],
+    3
+   ]
+  ],
+  "rip": [
+   [
+    "nodraft-b1 r1",
+    74.9788640457497,
+    "ok"
+   ],
+   [
+    "nodraft-b1 r2",
+    79.63769312327521,
+    "ok"
+   ],
+   [
+    "nodraft-b1 r3",
+    80.28108398848617,
+    "ok"
+   ],
+   [
+    "nodraft-b2 r1",
+    72.48879373257819,
+    "ok"
+   ],
+   [
+    "nodraft-b2 r2",
+    86.67530510241113,
+    "ok"
+   ],
+   [
+    "nodraft-b2 r3",
+    78.08339477756103,
+    "ok"
+   ],
+   [
+    "nodraft-f5 r1",
+    73.25497698287384,
+    "ok"
+   ],
+   [
+    "nodraft-f5 r2",
+    80.53933886624574,
+    "ok"
+   ],
+   [
+    "nodraft-f5 r3",
+    87.01774290125572,
+    "ok"
+   ]
+  ],
+  "escluse": [],
+  "non_verificabili": [],
+  "problemi": [],
+  "completo": true,
+  "nuove_valide": 3,
+  "cella2_ricalcolata": [
+   78.86054395041812,
+   75.75499672870254,
+   80.12023627218343
+  ]
+ },
+ "prima_riga": "**F5 nodraft-f5: PASSA** — ARC-it acc_norm 56.3730 ±1.45 ≥ 53.5 (+2.8730 punti; n=1169); GSM8K strict 96.1334 ±0.53 ≥ 94.1 (+2.0334 punti; n=1319); needle 32k e 128k 9/9 e 9/9; equivalenza greedy 2 passate identici 20/20.",
+ "anomalie_stato": [],
+ "equivalenza": {
+  "equiv-boot-draftho.log": [
+   20,
+   20
+  ],
+  "equiv-config.log": [
+   20,
+   20
+  ],
+  "equiv-nodraft-vs-cella2.log": [
+   20,
+   20
+  ]
+ },
+ "boot": {
+  "nodraft-f5": {
+   "kv": 829881,
+   "avvio": "20:49:37",
+   "durata": "0:13:17"
+  },
+  "draftho-f5": {
+   "kv": 818294,
+   "avvio": "22:10:50",
+   "durata": "0:13:37"
+  },
+  "draftho-b2": {
+   "kv": 813949,
+   "avvio": "23:29:29",
+   "durata": "0:13:07"
+  }
+ },
+ "memoria": {
+  "nodraft-f5": {
+   "campioni": 1995,
+   "da": "21:02:54",
+   "a": "22:10:35",
+   "usata_max_gib": 114.79,
+   "swap_min_gib": 3.76,
+   "swap_max_gib": 4.13,
+   "pswpout_delta": 108058,
+   "pswpout_delta_gib": 0.41220855712890625,
+   "pgmajfault_delta": 6634280,
+   "gpu_temp_max_c": 78,
+   "letti_delta_gib": 26.950759887695312,
+   "scritti_delta_gib": 0.8636856079101562
+  },
+  "draftho-f5": {
+   "campioni": 1910,
+   "da": "22:24:27",
+   "a": "23:29:13",
+   "usata_max_gib": 116.19,
+   "swap_min_gib": 3.94,
+   "swap_max_gib": 4.11,
+   "pswpout_delta": 0,
+   "pswpout_delta_gib": 0.0,
+   "pgmajfault_delta": 8233601,
+   "gpu_temp_max_c": 77,
+   "letti_delta_gib": 32.80983352661133,
+   "scritti_delta_gib": 0.3788566589355469
+  },
+  "draftho-b2": {
+   "campioni": 108,
+   "da": "23:42:36",
+   "a": "23:46:13",
+   "usata_max_gib": 112.82,
+   "swap_min_gib": 4.04,
+   "swap_max_gib": 4.13,
+   "pswpout_delta": 0,
+   "pswpout_delta_gib": 0.0,
+   "pgmajfault_delta": 224539,
+   "gpu_temp_max_c": 63,
+   "letti_delta_gib": 1.5985794067382812,
+   "scritti_delta_gib": 0.17414093017578125
+  }
+ }
+}

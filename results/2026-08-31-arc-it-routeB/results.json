@@ -1,0 +1,24 @@
+{
+ "results": {
+  "arc_it": {
+   "name": "arc_it",
+   "alias": "arc_it",
+   "sample_len": 50,
+   "acc,none": 0.46,
+   "acc_stderr,none": 0.07119963311072636,
+   "acc_norm,none": 0.6,
+   "acc_norm_stderr,none": 0.06998542122237651
+  }
+ },
+ "n-shot": {
+  "arc_it": 0
+ },
+ "total_evaluation_time_seconds": 210.81508498699986,
+ "ds4_cli_seconds": 205.98163696399934,
+ "config": {
+  "limit": 50,
+  "num_fewshot": 0,
+  "model": "/srv/cix/modelli/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix-0731.gguf",
+  "runner": "ds4-cli --score-file"
+ }
+}

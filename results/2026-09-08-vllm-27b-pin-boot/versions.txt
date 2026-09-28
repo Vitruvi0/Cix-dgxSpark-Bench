@@ -1,0 +1,40 @@
+=== generato: 2026-09-08T11:46:06+02:00 da versioni.sh
+Linux spark 6.17.0-1032-nvidia #32-Ubuntu SMP PREEMPT_DYNAMIC Wed Aug 19 17:40:46 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NVIDIA GB10, 580.173.02
+               total        utiliz     liber     condiv buff/cache   disponibile
+Mem:             121           4         109           0           9         117
+immagine: sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56 -> nvcr.io/nvidia/vllm@sha256:4b16878dc624fc3dcef3d9cf13564c148b602698219c846f275012d49cdb3b56
+modello: /srv/cix/modelli/Qwen3.8-27B-NVFP4
+1b3c71868d1299e52df6fc907deb202d5132b1ef0f72aae0ef6d15185dd53a5c  config.json
+429430e1b9e65b2cb98eff8cd10a06e70a09cee89c48487a3914684aeb6df57f  model.safetensors.index.json
+2 shard, 23417592488 byte
+terze: flashnext-one-spark 55c820de3ea665f25037388727472bedb0a9ead8 https://github.com/deathbyorderfill/flashnext-one-spark.git
+terze: GB10-3.8-Flash-Next 2dee9f3ba6ef00d5b46411ba5cb1fae047d77015 https://github.com/azampatti/GB10-3.8-Flash-Next.git
+terze: qwen3.8-Flash-DGX 209646cd98290035ccbddef29b14c460460a8709 https://github.com/blazux/qwen3.8-Flash-DGX.git
+patch: 3860c534a85031e3372a0549e27b4ba11c47fd64d6aeae2542036bee58924fa2  ./patch_fp8.py
+patch: a3990a543f39a300d771dca767237fb7abb53b14fbbe14905d8a2171298a41e2  ./patch_ple_off.py
+patch: d4de5bf7acd3f601193643ade968756c1330f948cce4b50b69f18cde904ab231  ./qwen4_exp_nvfp4.py
+patch: 13b34fe4f9640765c35a674424ec4d55f568193a0adacd7e4e9d6aa131aadd64  ./qwen4_exp_nvfp4.py.orig
+patch: 8252595597e1a2edcd9d3d073b88ee91ab60da958d5dcabdef6e0c8a18aca747  ./qwen4_exp_nvfp4.py.prestep2
+patch: 1e8afc1850d77f844adf58755bcb3e8ea56bc06611520ee5cda96440d5ebdd25  ./SHA256SUMS
+patch: dc83fc51a91fcde70253ee04cc3595cebd2a4a63224eaa9e3e7050bea04620cb  ./SHA256SUMS.flashnext-one-spark
+repo cix: d742c3da3e34f8686698ce31a078f89f4960fc28 branch bench-w2-controlli
+driver: 4059c6d6f435084189f763264809b00ac3b69b9c399907c9602411422339572e  ./cella-pin-boot.sh
+driver: 95c0eb2c6d7a66672d2e62191b905ce9b83862544edb9e5a61c1dceccfe97ffc  ./confronta_boot.py
+driver: 309691d42e4b090bc01c6b931bed926d30815514ad1a8e99041941795082593d  ./warmup.py
+harness: b2c57097dd01fefce46fa9f44727da46139871a820cd6a89317dd0be13fecf7d  latenza.py
+harness: 8f737087b0fb784df3c6bdd588cf50d022a5b2d8625faca31eee6e13a956b545  concorrenza.py
+harness: 89268f002985d76658f3c84dc3c41b093bc3886cbddacf3c006c766bb0c7fb88  validita.py
+0d5a053aca77697e87c3552951d855dcacda219d
+ambiente_C=24 alimentazione=rete, profilo default (dato dell'operatore, 08/09 11:39)
+pin=-3 cache-boot inizialmente vuota salvo seed; nessun reset tra B1/B2/B3/B4
+50541786cf5a735a0d8841666a742bf6f0eff55414ba400b6290082514e95023  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-07-vllm-27b-spec2/pin/sitecustomize.py
+3b1d0795a36d6737227dc384b5ba42452370a07650d784da727a1fde0991284f  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-07-vllm-27b-spec2/autotune-seed/autotune_configs.json
+1259d6b8a6d20197eafa9d626008d2cb4e0013dc580bb156e6c4f7f5533a1913  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-04-flashnext-sglang/prompts/equivalenza-20.txt
+6af31497c09952400ef68966a1207ce5ddaefb41e0e21b6578dfeb62e9a4c67d  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-04-flashnext-sglang/equivalenza.py
+d5f83a148bb281d0ee7287d6423fc0ee6c8f7cf053e81e59e68fd8a755b86cee  /home/cix/cix-worktrees/cella-pin/benchmark/harness/driver-lib.sh
+f0989d86c63be9927da420f2cfd57c92d2bf5fade66bd99064c5533df141b84a  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-08-vllm-27b-pin-boot/README.md
+95c0eb2c6d7a66672d2e62191b905ce9b83862544edb9e5a61c1dceccfe97ffc  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-08-vllm-27b-pin-boot/confronta_boot.py
+309691d42e4b090bc01c6b931bed926d30815514ad1a8e99041941795082593d  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-08-vllm-27b-pin-boot/warmup.py
+4059c6d6f435084189f763264809b00ac3b69b9c399907c9602411422339572e  /home/cix/cix-worktrees/cella-pin/benchmark/risultati/2026-09-08-vllm-27b-pin-boot/cella-pin-boot.sh

@@ -1,0 +1,15 @@
+# Raw benchmark output: generated text, server logs and eval logs stay out of
+# the repo. Only metric CSVs, summaries and versions.txt are committed.
+results/**/*.jsonl
+results/**/*.jsonl.gz
+results/**/*.log
+results/**/*.eval
+
+# Corpora are supplied by whoever runs the benchmark (see docs/methodology.md).
+corpora/
+
+__pycache__/
+*.pyc
+
+# Editor lock files
+.~lock.*

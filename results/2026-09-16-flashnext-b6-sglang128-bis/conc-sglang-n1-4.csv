@@ -1,0 +1,2 @@
+run,livello,esito,errore,prompt_tokens,completion_tokens,conteggio,ttft_ms,tok_s,finish_reason,t_invio,t_fine,fase,punto,rip,warmup,timestamp
+27f971461b32878cf71b70709ab9772e,1,ok,,101,56,usage,259.9,28.11,stop,306079.769301183,306081.985668007,sglang,n1,4,False,2026-09-15T23:45:12+0200
